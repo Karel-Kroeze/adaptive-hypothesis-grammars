@@ -6,6 +6,8 @@ This repository contains the grammars used in the first stage of the _Adaptivity
  - Electrical Circuits    ( _Dutch, English_ )
  - Supply and Demand      ( _Dutch_ )
  - Buoyancy               ( _Dutch, English_ )
+ - Photosynthesis         ( _Dutch_ )
+ - Heat transfer          ( _Dutch_ )
  
  Grammars are compiled with [nearley.js](https://nearley.js.org).
  
