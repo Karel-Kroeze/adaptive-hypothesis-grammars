@@ -1,15 +1,16 @@
-@include "./base/helpers.ne"
+@include "./helpers.ne"
 
-HYPOTHESIS -> QUAL? if _ ACTION then? ACTION   {% function(d) { return _.merge( { independent: d[3], dependent: d[5] }, d[0] ) } %}
-            | QUAL? ACTION _ then _ ACTION         {% function(d) { return _.merge( { independent: d[1], dependent: d[5] }, d[0] ) } %}
-            | ACTION _ if _ ACTION             {% function(d) { return { independent: d[4], dependent: d[0] }} %}
+HYPOTHESIS -> QUAL? if? ACTION? THEN? ACTION  {% function(d) { return _.merge( { independent: d[2], dependent: d[4] }, d[0] ) } %}
+            | QUAL? if? ACTION THEN? ACTION?  {% function(d) { return _.merge( { independent: d[2], dependent: d[4] }, d[0] ) } %}
+            | QUAL? if? ACTION? THEN ACTION?  {% function(d) { return _.merge( { independent: d[2], dependent: d[4] }, d[0] ) } %}
+            | ACTION? _ if _ ACTION?          {% function(d) { return { independent: d[4], dependent: d[0] }} %}
 
 # Always return array of actions for further processing
-ACTION -> VAR _ interactor _ VAR    {% function(d) { return [ _.merge( { variables: [ d[0], d[4] ] }, d[2] ) ] } %}
-        | hulpwerkwoord? VAR _ MOD  {% function(d) { return [ _.merge( d[1], d[3] ) ] } %}
-        | MOD _ VAR hulpwerkwoord?  {% function(d) { return [ _.merge( d[0], d[2] ) ] } %}
-        | ACTION _ and _ ACTION     {% function(d) { return d[0].concat( d[4] ) } %}
-        | ACTION _ QUAL             {% function(d) { 
+ACTION? -> ACTION 
+        | HELP? VAR _:? MOD? HELP?  {% function(d) { return [ _.merge( d[1], d[3] ) ] } %}
+        | HELP? MOD? _:? VAR HELP?  {% function(d) { return [ _.merge( d[3], d[1] ) ] } %}
+        | ACTION? _ and _ ACTION?   {% function(d) { return d[0].concat( d[4] ) } %}
+        | ACTION? _ QUAL            {% function(d) { 
                                                       var actions = d[0];
                                                       var qualifier = d[2];
                                                       var n = actions.length;
@@ -19,7 +20,31 @@ ACTION -> VAR _ interactor _ VAR    {% function(d) { return [ _.merge( { variabl
                                                       return actions;
                                                    } %}
 
+ACTION -> VAR _ interactor _ VAR     {% function(d) { return [ _.merge( { variables: [ d[0], d[4] ] }, d[2] ) ] } %}
+        | HELP? VAR _ MOD HELP?      {% function(d) { return [ _.merge( d[1], d[3] ) ] } %}
+        | HELP? MOD _ VAR HELP?      {% function(d) { return [ _.merge( d[3], d[1] ) ] } %}
+        | ACTION _ and _ ACTION?     {% function(d) { return d[0].concat( d[4] ) } %}
+        | ACTION? _ and _ ACTION     {% function(d) { return d[0].concat( d[4] ) } %}
+        | ACTION _ QUAL              {% function(d) { 
+                                                      var actions = d[0];
+                                                      var qualifier = d[2];
+                                                      var n = actions.length;
+                                                      for ( var i = 0; i < n; i++ ){
+                                                            actions[i] = _.merge( actions[i], qualifier )
+                                                      }         
+                                                      return actions;
+                                                   } %}
+
+MOD? -> null 
+      | MOD
+
 MOD -> modifier                     {% $( 0 ) %}
+
+HELP? -> null                       {% nada %}
+      | HELP
+
+HELP -> _:? hulpwerkwoord _:?
+      | HELP HELP
 
 VAR -> QUAL? VAR_ITEM               {% join( 1, 0 ) %}
      | VAR_ITEM _ QUAL              {% join( 0, 2 ) %}
@@ -69,13 +94,15 @@ preposition -> "in"                 {% nada %}
              | "van"                {% nada %}
 
 if? -> null                         {% nada %}
-     | if _                         {% nada %}
+     | _:? if _                     {% nada %}
 
 if -> "als"                         {% nada %}
 
-then? -> null                       {% nada %}
+THEN? -> _:? then _                 {% nada %}
        | _                          {% nada %}
-       | _:? then _                 {% nada %}
+       | null                       {% nada %}
+
+THEN -> then _                      {% nada %}
 
 then -> "dan"                       {% nada %}
       | ","                         {% nada %}

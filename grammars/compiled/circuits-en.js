@@ -1,7 +1,7 @@
-// Generated automatically by nearley
+// Generated automatically by nearley, version 2.19.0
 // http://github.com/Hardmath123/nearley
 (function () {
-function id(x) {return x[0]; }
+function id(x) { return x[0]; }
 
     // in node, require is defined, in browser, _ should be made available externally.
     var _; 

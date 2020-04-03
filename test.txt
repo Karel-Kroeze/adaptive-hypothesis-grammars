@@ -1,0 +1,2186 @@
+Table length: 58
+Number of parses: 15
+Parse Charts
+Chart: 0
+0: {HYPOTHESIS →  ● QUAL? if? ACTION? THEN? ACTION}, from: 0
+1: {HYPOTHESIS →  ● QUAL? if? ACTION THEN? ACTION?}, from: 0
+2: {HYPOTHESIS →  ● QUAL? if? ACTION? THEN ACTION?}, from: 0
+3: {HYPOTHESIS →  ● ACTION? _ if _ ACTION?}, from: 0
+4: {QUAL? →  ● }, from: 0
+5: {QUAL? →  ● QUAL QUAL?$ebnf$1}, from: 0
+6: {ACTION? →  ● ACTION}, from: 0
+7: {ACTION? →  ● HELP? VAR ACTION?$ebnf$1 MOD? HELP?}, from: 0
+8: {ACTION? →  ● HELP? MOD? ACTION?$ebnf$2 VAR HELP?}, from: 0
+9: {ACTION? →  ● ACTION? _ and _ ACTION?}, from: 0
+10: {ACTION? →  ● ACTION? _ QUAL}, from: 0
+11: {HYPOTHESIS → QUAL? ● if? ACTION? THEN ACTION?}, from: 0
+12: {HYPOTHESIS → QUAL? ● if? ACTION THEN? ACTION?}, from: 0
+13: {HYPOTHESIS → QUAL? ● if? ACTION? THEN? ACTION}, from: 0
+14: {QUAL →  ● preposition? article? qualifier}, from: 0
+15: {ACTION →  ● VAR _ interactor _ VAR}, from: 0
+16: {ACTION →  ● HELP? VAR _ MOD HELP?}, from: 0
+17: {ACTION →  ● HELP? MOD _ VAR HELP?}, from: 0
+18: {ACTION →  ● ACTION _ and _ ACTION?}, from: 0
+19: {ACTION →  ● ACTION? _ and _ ACTION}, from: 0
+20: {ACTION →  ● ACTION _ QUAL}, from: 0
+21: {HELP? →  ● }, from: 0
+22: {HELP? →  ● HELP}, from: 0
+23: {if? →  ● }, from: 0
+24: {if? →  ● if?$ebnf$1 if _}, from: 0
+25: {preposition? →  ● }, from: 0
+26: {preposition? →  ● preposition _}, from: 0
+27: {VAR →  ● QUAL? VAR_ITEM}, from: 0
+28: {VAR →  ● VAR_ITEM _ QUAL}, from: 0
+29: {ACTION → HELP? ● MOD _ VAR HELP?}, from: 0
+30: {ACTION → HELP? ● VAR _ MOD HELP?}, from: 0
+31: {ACTION? → HELP? ● MOD? ACTION?$ebnf$2 VAR HELP?}, from: 0
+32: {ACTION? → HELP? ● VAR ACTION?$ebnf$1 MOD? HELP?}, from: 0
+33: {HELP →  ● HELP$ebnf$1 hulpwerkwoord HELP$ebnf$2}, from: 0
+34: {HELP →  ● HELP HELP}, from: 0
+35: {HYPOTHESIS → QUAL? if? ● ACTION? THEN? ACTION}, from: 0
+36: {HYPOTHESIS → QUAL? if? ● ACTION THEN? ACTION?}, from: 0
+37: {HYPOTHESIS → QUAL? if? ● ACTION? THEN ACTION?}, from: 0
+38: {if?$ebnf$1 →  ● _}, from: 0
+39: {if?$ebnf$1 →  ● }, from: 0
+40: {QUAL → preposition? ● article? qualifier}, from: 0
+41: {preposition →  ● preposition$string$1}, from: 0
+42: {preposition →  ● preposition$string$2}, from: 0
+43: {VAR → QUAL? ● VAR_ITEM}, from: 0
+44: {VAR_ITEM →  ● preposition? article? variable}, from: 0
+45: {VAR_ITEM →  ● PROP _ VAR_ITEM}, from: 0
+46: {VAR_ITEM →  ● DESC _ VAR_ITEM}, from: 0
+47: {VAR_ITEM →  ● QUAL _ VAR_ITEM}, from: 0
+48: {MOD →  ● modifier}, from: 0
+49: {MOD? →  ● }, from: 0
+50: {MOD? →  ● MOD}, from: 0
+51: {HELP$ebnf$1 →  ● _}, from: 0
+52: {HELP$ebnf$1 →  ● }, from: 0
+53: {_ →  ● " "}, from: 0
+54: {if? → if?$ebnf$1 ● if _}, from: 0
+55: {article? →  ● }, from: 0
+56: {article? →  ● article _}, from: 0
+57: {preposition$string$1 →  ● "i" "n"}, from: 0
+58: {preposition$string$2 →  ● "v" "a" "n"}, from: 0
+59: {VAR_ITEM → preposition? ● article? variable}, from: 0
+60: {PROP →  ● property _ and _ PROP}, from: 0
+61: {PROP →  ● article? property}, from: 0
+62: {DESC →  ● DESC_ITEM _ DESC}, from: 0
+63: {DESC →  ● DESC_ITEM}, from: 0
+64: {modifier →  ● modifier$string$1}, from: 0
+65: {modifier →  ● modifier$string$2}, from: 0
+66: {modifier →  ● modifier$string$3}, from: 0
+67: {modifier →  ● modifier$string$4}, from: 0
+68: {modifier →  ● modifier$string$5}, from: 0
+69: {modifier →  ● modifier$string$6}, from: 0
+70: {ACTION? → HELP? MOD? ● ACTION?$ebnf$2 VAR HELP?}, from: 0
+71: {HELP → HELP$ebnf$1 ● hulpwerkwoord HELP$ebnf$2}, from: 0
+72: {if →  ● if$string$1}, from: 0
+73: {QUAL → preposition? article? ● qualifier}, from: 0
+74: {article →  ● article$string$1}, from: 0
+75: {article →  ● article$string$2}, from: 0
+76: {article →  ● article$string$3}, from: 0
+77: {VAR_ITEM → preposition? article? ● variable}, from: 0
+78: {PROP → article? ● property}, from: 0
+79: {DESC_ITEM →  ● preposition? article? descriptive}, from: 0
+80: {DESC_ITEM →  ● preposition? article? variable}, from: 0
+81: {modifier$string$1 →  ● "w" "a" "r" "m" "e" "r"}, from: 0
+82: {modifier$string$2 →  ● "m" "e" "e" "r"}, from: 0
+83: {modifier$string$3 →  ● "k" "o" "u" "d" "e" "r"}, from: 0
+84: {modifier$string$4 →  ● "m" "i" "n" "d" "e" "r"}, from: 0
+85: {modifier$string$5 →  ● "o" "n" "t" "s" "n" "a" "p" "t"}, from: 0
+86: {modifier$string$6 →  ● "g" "e" "l" "i" "j" "k"}, from: 0
+87: {ACTION?$ebnf$2 →  ● _}, from: 0
+88: {ACTION?$ebnf$2 →  ● }, from: 0
+89: {hulpwerkwoord →  ● hulpwerkwoord$string$1}, from: 0
+90: {hulpwerkwoord →  ● hulpwerkwoord$string$2}, from: 0
+91: {hulpwerkwoord →  ● hulpwerkwoord$string$3}, from: 0
+92: {hulpwerkwoord →  ● hulpwerkwoord$string$4}, from: 0
+93: {hulpwerkwoord →  ● hulpwerkwoord$string$5}, from: 0
+94: {hulpwerkwoord →  ● hulpwerkwoord$string$6}, from: 0
+95: {if$string$1 →  ● "a" "l" "s"}, from: 0
+96: {qualifier →  ● qualifier$string$1}, from: 0
+97: {qualifier →  ● qualifier$string$2}, from: 0
+98: {article$string$1 →  ● "d" "e"}, from: 0
+99: {article$string$2 →  ● "h" "e" "t"}, from: 0
+100: {article$string$3 →  ● "e" "e" "n"}, from: 0
+101: {variable →  ● variable$string$1}, from: 0
+102: {variable →  ● variable$string$2}, from: 0
+103: {variable →  ● variable$string$3}, from: 0
+104: {variable →  ● variable$string$4}, from: 0
+105: {variable →  ● variable$string$5}, from: 0
+106: {variable →  ● variable$string$6}, from: 0
+107: {DESC_ITEM → preposition? ● article? descriptive}, from: 0
+108: {DESC_ITEM → preposition? ● article? variable}, from: 0
+109: {ACTION? → HELP? MOD? ACTION?$ebnf$2 ● VAR HELP?}, from: 0
+110: {hulpwerkwoord$string$1 →  ● "b" "l" "i" "j" "f" "t"}, from: 0
+111: {hulpwerkwoord$string$2 →  ● "g" "a" "a" "t"}, from: 0
+112: {hulpwerkwoord$string$3 →  ● "e" "r"}, from: 0
+113: {hulpwerkwoord$string$4 →  ● "i" "s"}, from: 0
+114: {hulpwerkwoord$string$5 →  ● "z" "i" "t"}, from: 0
+115: {hulpwerkwoord$string$6 →  ● "w" "o" "r" "d" "t"}, from: 0
+116: {qualifier$string$1 →  ● "b" "o" "v" "e" "n"}, from: 0
+117: {qualifier$string$2 →  ● "o" "n" "d" "e" "r"}, from: 0
+118: {variable$string$1 →  ● "w" "a" "r" "m" "e" " " "l" "u" "c" "h" "t"}, from: 0
+119: {variable$string$2 →  ● "k" "o" "u" "d" "e" " " "l" "u" "c" "h" "t"}, from: 0
+120: {variable$string$3 →  ● "k" "a" "m" "e" "r"}, from: 0
+121: {variable$string$4 →  ● "g" "a" "t"}, from: 0
+122: {variable$string$5 →  ● "m" "u" "u" "r"}, from: 0
+123: {variable$string$6 →  ● "p" "l" "a" "f" "o" "n" "d"}, from: 0
+124: {DESC_ITEM → preposition? article? ● descriptive}, from: 0
+125: {DESC_ITEM → preposition? article? ● variable}, from: 0
+126: {descriptive →  ● descriptive$string$1}, from: 0
+127: {descriptive$string$1 →  ● "g" "e" "l" "i" "j" "k"}, from: 0
+
+Chart: 1
+0: {if$string$1 → "a" ● "l" "s"}, from: 0
+
+Chart: 2
+0: {if$string$1 → "a" "l" ● "s"}, from: 0
+
+Chart: 3
+0: {if$string$1 → "a" "l" "s" ● }, from: 0
+1: {if → if$string$1 ● }, from: 0
+2: {if? → if?$ebnf$1 if ● _}, from: 0
+3: {_ →  ● " "}, from: 3
+
+Chart: 4
+0: {_ → " " ● }, from: 3
+1: {if? → if?$ebnf$1 if _ ● }, from: 0
+2: {HYPOTHESIS → QUAL? if? ● ACTION? THEN? ACTION}, from: 0
+3: {HYPOTHESIS → QUAL? if? ● ACTION THEN? ACTION?}, from: 0
+4: {HYPOTHESIS → QUAL? if? ● ACTION? THEN ACTION?}, from: 0
+5: {ACTION? →  ● ACTION}, from: 4
+6: {ACTION? →  ● HELP? VAR ACTION?$ebnf$1 MOD? HELP?}, from: 4
+7: {ACTION? →  ● HELP? MOD? ACTION?$ebnf$2 VAR HELP?}, from: 4
+8: {ACTION? →  ● ACTION? _ and _ ACTION?}, from: 4
+9: {ACTION? →  ● ACTION? _ QUAL}, from: 4
+10: {ACTION →  ● VAR _ interactor _ VAR}, from: 4
+11: {ACTION →  ● HELP? VAR _ MOD HELP?}, from: 4
+12: {ACTION →  ● HELP? MOD _ VAR HELP?}, from: 4
+13: {ACTION →  ● ACTION _ and _ ACTION?}, from: 4
+14: {ACTION →  ● ACTION? _ and _ ACTION}, from: 4
+15: {ACTION →  ● ACTION _ QUAL}, from: 4
+16: {HELP? →  ● }, from: 4
+17: {HELP? →  ● HELP}, from: 4
+18: {VAR →  ● QUAL? VAR_ITEM}, from: 4
+19: {VAR →  ● VAR_ITEM _ QUAL}, from: 4
+20: {ACTION → HELP? ● MOD _ VAR HELP?}, from: 4
+21: {ACTION → HELP? ● VAR _ MOD HELP?}, from: 4
+22: {ACTION? → HELP? ● MOD? ACTION?$ebnf$2 VAR HELP?}, from: 4
+23: {ACTION? → HELP? ● VAR ACTION?$ebnf$1 MOD? HELP?}, from: 4
+24: {HELP →  ● HELP$ebnf$1 hulpwerkwoord HELP$ebnf$2}, from: 4
+25: {HELP →  ● HELP HELP}, from: 4
+26: {QUAL? →  ● }, from: 4
+27: {QUAL? →  ● QUAL QUAL?$ebnf$1}, from: 4
+28: {VAR_ITEM →  ● preposition? article? variable}, from: 4
+29: {VAR_ITEM →  ● PROP _ VAR_ITEM}, from: 4
+30: {VAR_ITEM →  ● DESC _ VAR_ITEM}, from: 4
+31: {VAR_ITEM →  ● QUAL _ VAR_ITEM}, from: 4
+32: {MOD →  ● modifier}, from: 4
+33: {MOD? →  ● }, from: 4
+34: {MOD? →  ● MOD}, from: 4
+35: {HELP$ebnf$1 →  ● _}, from: 4
+36: {HELP$ebnf$1 →  ● }, from: 4
+37: {VAR → QUAL? ● VAR_ITEM}, from: 4
+38: {QUAL →  ● preposition? article? qualifier}, from: 4
+39: {preposition? →  ● }, from: 4
+40: {preposition? →  ● preposition _}, from: 4
+41: {PROP →  ● property _ and _ PROP}, from: 4
+42: {PROP →  ● article? property}, from: 4
+43: {DESC →  ● DESC_ITEM _ DESC}, from: 4
+44: {DESC →  ● DESC_ITEM}, from: 4
+45: {modifier →  ● modifier$string$1}, from: 4
+46: {modifier →  ● modifier$string$2}, from: 4
+47: {modifier →  ● modifier$string$3}, from: 4
+48: {modifier →  ● modifier$string$4}, from: 4
+49: {modifier →  ● modifier$string$5}, from: 4
+50: {modifier →  ● modifier$string$6}, from: 4
+51: {ACTION? → HELP? MOD? ● ACTION?$ebnf$2 VAR HELP?}, from: 4
+52: {_ →  ● " "}, from: 4
+53: {HELP → HELP$ebnf$1 ● hulpwerkwoord HELP$ebnf$2}, from: 4
+54: {QUAL → preposition? ● article? qualifier}, from: 4
+55: {VAR_ITEM → preposition? ● article? variable}, from: 4
+56: {preposition →  ● preposition$string$1}, from: 4
+57: {preposition →  ● preposition$string$2}, from: 4
+58: {article? →  ● }, from: 4
+59: {article? →  ● article _}, from: 4
+60: {DESC_ITEM →  ● preposition? article? descriptive}, from: 4
+61: {DESC_ITEM →  ● preposition? article? variable}, from: 4
+62: {modifier$string$1 →  ● "w" "a" "r" "m" "e" "r"}, from: 4
+63: {modifier$string$2 →  ● "m" "e" "e" "r"}, from: 4
+64: {modifier$string$3 →  ● "k" "o" "u" "d" "e" "r"}, from: 4
+65: {modifier$string$4 →  ● "m" "i" "n" "d" "e" "r"}, from: 4
+66: {modifier$string$5 →  ● "o" "n" "t" "s" "n" "a" "p" "t"}, from: 4
+67: {modifier$string$6 →  ● "g" "e" "l" "i" "j" "k"}, from: 4
+68: {ACTION?$ebnf$2 →  ● _}, from: 4
+69: {ACTION?$ebnf$2 →  ● }, from: 4
+70: {hulpwerkwoord →  ● hulpwerkwoord$string$1}, from: 4
+71: {hulpwerkwoord →  ● hulpwerkwoord$string$2}, from: 4
+72: {hulpwerkwoord →  ● hulpwerkwoord$string$3}, from: 4
+73: {hulpwerkwoord →  ● hulpwerkwoord$string$4}, from: 4
+74: {hulpwerkwoord →  ● hulpwerkwoord$string$5}, from: 4
+75: {hulpwerkwoord →  ● hulpwerkwoord$string$6}, from: 4
+76: {preposition$string$1 →  ● "i" "n"}, from: 4
+77: {preposition$string$2 →  ● "v" "a" "n"}, from: 4
+78: {VAR_ITEM → preposition? article? ● variable}, from: 4
+79: {QUAL → preposition? article? ● qualifier}, from: 4
+80: {PROP → article? ● property}, from: 4
+81: {article →  ● article$string$1}, from: 4
+82: {article →  ● article$string$2}, from: 4
+83: {article →  ● article$string$3}, from: 4
+84: {DESC_ITEM → preposition? ● article? descriptive}, from: 4
+85: {DESC_ITEM → preposition? ● article? variable}, from: 4
+86: {ACTION? → HELP? MOD? ACTION?$ebnf$2 ● VAR HELP?}, from: 4
+87: {hulpwerkwoord$string$1 →  ● "b" "l" "i" "j" "f" "t"}, from: 4
+88: {hulpwerkwoord$string$2 →  ● "g" "a" "a" "t"}, from: 4
+89: {hulpwerkwoord$string$3 →  ● "e" "r"}, from: 4
+90: {hulpwerkwoord$string$4 →  ● "i" "s"}, from: 4
+91: {hulpwerkwoord$string$5 →  ● "z" "i" "t"}, from: 4
+92: {hulpwerkwoord$string$6 →  ● "w" "o" "r" "d" "t"}, from: 4
+93: {variable →  ● variable$string$1}, from: 4
+94: {variable →  ● variable$string$2}, from: 4
+95: {variable →  ● variable$string$3}, from: 4
+96: {variable →  ● variable$string$4}, from: 4
+97: {variable →  ● variable$string$5}, from: 4
+98: {variable →  ● variable$string$6}, from: 4
+99: {qualifier →  ● qualifier$string$1}, from: 4
+100: {qualifier →  ● qualifier$string$2}, from: 4
+101: {article$string$1 →  ● "d" "e"}, from: 4
+102: {article$string$2 →  ● "h" "e" "t"}, from: 4
+103: {article$string$3 →  ● "e" "e" "n"}, from: 4
+104: {DESC_ITEM → preposition? article? ● descriptive}, from: 4
+105: {DESC_ITEM → preposition? article? ● variable}, from: 4
+106: {variable$string$1 →  ● "w" "a" "r" "m" "e" " " "l" "u" "c" "h" "t"}, from: 4
+107: {variable$string$2 →  ● "k" "o" "u" "d" "e" " " "l" "u" "c" "h" "t"}, from: 4
+108: {variable$string$3 →  ● "k" "a" "m" "e" "r"}, from: 4
+109: {variable$string$4 →  ● "g" "a" "t"}, from: 4
+110: {variable$string$5 →  ● "m" "u" "u" "r"}, from: 4
+111: {variable$string$6 →  ● "p" "l" "a" "f" "o" "n" "d"}, from: 4
+112: {qualifier$string$1 →  ● "b" "o" "v" "e" "n"}, from: 4
+113: {qualifier$string$2 →  ● "o" "n" "d" "e" "r"}, from: 4
+114: {descriptive →  ● descriptive$string$1}, from: 4
+115: {descriptive$string$1 →  ● "g" "e" "l" "i" "j" "k"}, from: 4
+
+Chart: 5
+0: {article$string$3 → "e" ● "e" "n"}, from: 4
+1: {hulpwerkwoord$string$3 → "e" ● "r"}, from: 4
+
+Chart: 6
+0: {hulpwerkwoord$string$3 → "e" "r" ● }, from: 4
+1: {hulpwerkwoord → hulpwerkwoord$string$3 ● }, from: 4
+2: {HELP → HELP$ebnf$1 hulpwerkwoord ● HELP$ebnf$2}, from: 4
+3: {HELP$ebnf$2 →  ● _}, from: 6
+4: {HELP$ebnf$2 →  ● }, from: 6
+5: {_ →  ● " "}, from: 6
+6: {HELP → HELP$ebnf$1 hulpwerkwoord HELP$ebnf$2 ● }, from: 4
+7: {HELP → HELP ● HELP}, from: 4
+8: {HELP? → HELP ● }, from: 4
+9: {HELP →  ● HELP$ebnf$1 hulpwerkwoord HELP$ebnf$2}, from: 6
+10: {HELP →  ● HELP HELP}, from: 6
+11: {ACTION → HELP? ● MOD _ VAR HELP?}, from: 4
+12: {ACTION → HELP? ● VAR _ MOD HELP?}, from: 4
+13: {ACTION? → HELP? ● MOD? ACTION?$ebnf$2 VAR HELP?}, from: 4
+14: {ACTION? → HELP? ● VAR ACTION?$ebnf$1 MOD? HELP?}, from: 4
+15: {HELP$ebnf$1 →  ● _}, from: 6
+16: {HELP$ebnf$1 →  ● }, from: 6
+17: {MOD →  ● modifier}, from: 6
+18: {VAR →  ● QUAL? VAR_ITEM}, from: 6
+19: {VAR →  ● VAR_ITEM _ QUAL}, from: 6
+20: {MOD? →  ● }, from: 6
+21: {MOD? →  ● MOD}, from: 6
+22: {HELP → HELP$ebnf$1 ● hulpwerkwoord HELP$ebnf$2}, from: 6
+23: {modifier →  ● modifier$string$1}, from: 6
+24: {modifier →  ● modifier$string$2}, from: 6
+25: {modifier →  ● modifier$string$3}, from: 6
+26: {modifier →  ● modifier$string$4}, from: 6
+27: {modifier →  ● modifier$string$5}, from: 6
+28: {modifier →  ● modifier$string$6}, from: 6
+29: {QUAL? →  ● }, from: 6
+30: {QUAL? →  ● QUAL QUAL?$ebnf$1}, from: 6
+31: {VAR_ITEM →  ● preposition? article? variable}, from: 6
+32: {VAR_ITEM →  ● PROP _ VAR_ITEM}, from: 6
+33: {VAR_ITEM →  ● DESC _ VAR_ITEM}, from: 6
+34: {VAR_ITEM →  ● QUAL _ VAR_ITEM}, from: 6
+35: {ACTION? → HELP? MOD? ● ACTION?$ebnf$2 VAR HELP?}, from: 4
+36: {hulpwerkwoord →  ● hulpwerkwoord$string$1}, from: 6
+37: {hulpwerkwoord →  ● hulpwerkwoord$string$2}, from: 6
+38: {hulpwerkwoord →  ● hulpwerkwoord$string$3}, from: 6
+39: {hulpwerkwoord →  ● hulpwerkwoord$string$4}, from: 6
+40: {hulpwerkwoord →  ● hulpwerkwoord$string$5}, from: 6
+41: {hulpwerkwoord →  ● hulpwerkwoord$string$6}, from: 6
+42: {modifier$string$1 →  ● "w" "a" "r" "m" "e" "r"}, from: 6
+43: {modifier$string$2 →  ● "m" "e" "e" "r"}, from: 6
+44: {modifier$string$3 →  ● "k" "o" "u" "d" "e" "r"}, from: 6
+45: {modifier$string$4 →  ● "m" "i" "n" "d" "e" "r"}, from: 6
+46: {modifier$string$5 →  ● "o" "n" "t" "s" "n" "a" "p" "t"}, from: 6
+47: {modifier$string$6 →  ● "g" "e" "l" "i" "j" "k"}, from: 6
+48: {VAR → QUAL? ● VAR_ITEM}, from: 6
+49: {QUAL →  ● preposition? article? qualifier}, from: 6
+50: {preposition? →  ● }, from: 6
+51: {preposition? →  ● preposition _}, from: 6
+52: {PROP →  ● property _ and _ PROP}, from: 6
+53: {PROP →  ● article? property}, from: 6
+54: {DESC →  ● DESC_ITEM _ DESC}, from: 6
+55: {DESC →  ● DESC_ITEM}, from: 6
+56: {ACTION?$ebnf$2 →  ● _}, from: 6
+57: {ACTION?$ebnf$2 →  ● }, from: 6
+58: {hulpwerkwoord$string$1 →  ● "b" "l" "i" "j" "f" "t"}, from: 6
+59: {hulpwerkwoord$string$2 →  ● "g" "a" "a" "t"}, from: 6
+60: {hulpwerkwoord$string$3 →  ● "e" "r"}, from: 6
+61: {hulpwerkwoord$string$4 →  ● "i" "s"}, from: 6
+62: {hulpwerkwoord$string$5 →  ● "z" "i" "t"}, from: 6
+63: {hulpwerkwoord$string$6 →  ● "w" "o" "r" "d" "t"}, from: 6
+64: {QUAL → preposition? ● article? qualifier}, from: 6
+65: {VAR_ITEM → preposition? ● article? variable}, from: 6
+66: {preposition →  ● preposition$string$1}, from: 6
+67: {preposition →  ● preposition$string$2}, from: 6
+68: {article? →  ● }, from: 6
+69: {article? →  ● article _}, from: 6
+70: {DESC_ITEM →  ● preposition? article? descriptive}, from: 6
+71: {DESC_ITEM →  ● preposition? article? variable}, from: 6
+72: {ACTION? → HELP? MOD? ACTION?$ebnf$2 ● VAR HELP?}, from: 4
+73: {preposition$string$1 →  ● "i" "n"}, from: 6
+74: {preposition$string$2 →  ● "v" "a" "n"}, from: 6
+75: {VAR_ITEM → preposition? article? ● variable}, from: 6
+76: {QUAL → preposition? article? ● qualifier}, from: 6
+77: {PROP → article? ● property}, from: 6
+78: {article →  ● article$string$1}, from: 6
+79: {article →  ● article$string$2}, from: 6
+80: {article →  ● article$string$3}, from: 6
+81: {DESC_ITEM → preposition? ● article? descriptive}, from: 6
+82: {DESC_ITEM → preposition? ● article? variable}, from: 6
+83: {variable →  ● variable$string$1}, from: 6
+84: {variable →  ● variable$string$2}, from: 6
+85: {variable →  ● variable$string$3}, from: 6
+86: {variable →  ● variable$string$4}, from: 6
+87: {variable →  ● variable$string$5}, from: 6
+88: {variable →  ● variable$string$6}, from: 6
+89: {qualifier →  ● qualifier$string$1}, from: 6
+90: {qualifier →  ● qualifier$string$2}, from: 6
+91: {article$string$1 →  ● "d" "e"}, from: 6
+92: {article$string$2 →  ● "h" "e" "t"}, from: 6
+93: {article$string$3 →  ● "e" "e" "n"}, from: 6
+94: {DESC_ITEM → preposition? article? ● descriptive}, from: 6
+95: {DESC_ITEM → preposition? article? ● variable}, from: 6
+96: {variable$string$1 →  ● "w" "a" "r" "m" "e" " " "l" "u" "c" "h" "t"}, from: 6
+97: {variable$string$2 →  ● "k" "o" "u" "d" "e" " " "l" "u" "c" "h" "t"}, from: 6
+98: {variable$string$3 →  ● "k" "a" "m" "e" "r"}, from: 6
+99: {variable$string$4 →  ● "g" "a" "t"}, from: 6
+100: {variable$string$5 →  ● "m" "u" "u" "r"}, from: 6
+101: {variable$string$6 →  ● "p" "l" "a" "f" "o" "n" "d"}, from: 6
+102: {qualifier$string$1 →  ● "b" "o" "v" "e" "n"}, from: 6
+103: {qualifier$string$2 →  ● "o" "n" "d" "e" "r"}, from: 6
+104: {descriptive →  ● descriptive$string$1}, from: 6
+105: {descriptive$string$1 →  ● "g" "e" "l" "i" "j" "k"}, from: 6
+
+Chart: 7
+0: {_ → " " ● }, from: 6
+1: {ACTION?$ebnf$2 → _ ● }, from: 6
+2: {HELP$ebnf$1 → _ ● }, from: 6
+3: {HELP$ebnf$2 → _ ● }, from: 6
+4: {ACTION? → HELP? MOD? ACTION?$ebnf$2 ● VAR HELP?}, from: 4
+5: {HELP → HELP$ebnf$1 ● hulpwerkwoord HELP$ebnf$2}, from: 6
+6: {HELP → HELP$ebnf$1 hulpwerkwoord HELP$ebnf$2 ● }, from: 4
+7: {VAR →  ● QUAL? VAR_ITEM}, from: 7
+8: {VAR →  ● VAR_ITEM _ QUAL}, from: 7
+9: {hulpwerkwoord →  ● hulpwerkwoord$string$1}, from: 7
+10: {hulpwerkwoord →  ● hulpwerkwoord$string$2}, from: 7
+11: {hulpwerkwoord →  ● hulpwerkwoord$string$3}, from: 7
+12: {hulpwerkwoord →  ● hulpwerkwoord$string$4}, from: 7
+13: {hulpwerkwoord →  ● hulpwerkwoord$string$5}, from: 7
+14: {hulpwerkwoord →  ● hulpwerkwoord$string$6}, from: 7
+15: {HELP → HELP ● HELP}, from: 4
+16: {HELP? → HELP ● }, from: 4
+17: {QUAL? →  ● }, from: 7
+18: {QUAL? →  ● QUAL QUAL?$ebnf$1}, from: 7
+19: {VAR_ITEM →  ● preposition? article? variable}, from: 7
+20: {VAR_ITEM →  ● PROP _ VAR_ITEM}, from: 7
+21: {VAR_ITEM →  ● DESC _ VAR_ITEM}, from: 7
+22: {VAR_ITEM →  ● QUAL _ VAR_ITEM}, from: 7
+23: {hulpwerkwoord$string$1 →  ● "b" "l" "i" "j" "f" "t"}, from: 7
+24: {hulpwerkwoord$string$2 →  ● "g" "a" "a" "t"}, from: 7
+25: {hulpwerkwoord$string$3 →  ● "e" "r"}, from: 7
+26: {hulpwerkwoord$string$4 →  ● "i" "s"}, from: 7
+27: {hulpwerkwoord$string$5 →  ● "z" "i" "t"}, from: 7
+28: {hulpwerkwoord$string$6 →  ● "w" "o" "r" "d" "t"}, from: 7
+29: {HELP →  ● HELP$ebnf$1 hulpwerkwoord HELP$ebnf$2}, from: 7
+30: {HELP →  ● HELP HELP}, from: 7
+31: {ACTION → HELP? ● MOD _ VAR HELP?}, from: 4
+32: {ACTION → HELP? ● VAR _ MOD HELP?}, from: 4
+33: {ACTION? → HELP? ● MOD? ACTION?$ebnf$2 VAR HELP?}, from: 4
+34: {ACTION? → HELP? ● VAR ACTION?$ebnf$1 MOD? HELP?}, from: 4
+35: {VAR → QUAL? ● VAR_ITEM}, from: 7
+36: {QUAL →  ● preposition? article? qualifier}, from: 7
+37: {preposition? →  ● }, from: 7
+38: {preposition? →  ● preposition _}, from: 7
+39: {PROP →  ● property _ and _ PROP}, from: 7
+40: {PROP →  ● article? property}, from: 7
+41: {DESC →  ● DESC_ITEM _ DESC}, from: 7
+42: {DESC →  ● DESC_ITEM}, from: 7
+43: {HELP$ebnf$1 →  ● _}, from: 7
+44: {HELP$ebnf$1 →  ● }, from: 7
+45: {MOD →  ● modifier}, from: 7
+46: {MOD? →  ● }, from: 7
+47: {MOD? →  ● MOD}, from: 7
+48: {QUAL → preposition? ● article? qualifier}, from: 7
+49: {VAR_ITEM → preposition? ● article? variable}, from: 7
+50: {preposition →  ● preposition$string$1}, from: 7
+51: {preposition →  ● preposition$string$2}, from: 7
+52: {article? →  ● }, from: 7
+53: {article? →  ● article _}, from: 7
+54: {DESC_ITEM →  ● preposition? article? descriptive}, from: 7
+55: {DESC_ITEM →  ● preposition? article? variable}, from: 7
+56: {_ →  ● " "}, from: 7
+57: {HELP → HELP$ebnf$1 ● hulpwerkwoord HELP$ebnf$2}, from: 7
+58: {modifier →  ● modifier$string$1}, from: 7
+59: {modifier →  ● modifier$string$2}, from: 7
+60: {modifier →  ● modifier$string$3}, from: 7
+61: {modifier →  ● modifier$string$4}, from: 7
+62: {modifier →  ● modifier$string$5}, from: 7
+63: {modifier →  ● modifier$string$6}, from: 7
+64: {ACTION? → HELP? MOD? ● ACTION?$ebnf$2 VAR HELP?}, from: 4
+65: {preposition$string$1 →  ● "i" "n"}, from: 7
+66: {preposition$string$2 →  ● "v" "a" "n"}, from: 7
+67: {VAR_ITEM → preposition? article? ● variable}, from: 7
+68: {QUAL → preposition? article? ● qualifier}, from: 7
+69: {PROP → article? ● property}, from: 7
+70: {article →  ● article$string$1}, from: 7
+71: {article →  ● article$string$2}, from: 7
+72: {article →  ● article$string$3}, from: 7
+73: {DESC_ITEM → preposition? ● article? descriptive}, from: 7
+74: {DESC_ITEM → preposition? ● article? variable}, from: 7
+75: {modifier$string$1 →  ● "w" "a" "r" "m" "e" "r"}, from: 7
+76: {modifier$string$2 →  ● "m" "e" "e" "r"}, from: 7
+77: {modifier$string$3 →  ● "k" "o" "u" "d" "e" "r"}, from: 7
+78: {modifier$string$4 →  ● "m" "i" "n" "d" "e" "r"}, from: 7
+79: {modifier$string$5 →  ● "o" "n" "t" "s" "n" "a" "p" "t"}, from: 7
+80: {modifier$string$6 →  ● "g" "e" "l" "i" "j" "k"}, from: 7
+81: {ACTION?$ebnf$2 →  ● _}, from: 7
+82: {ACTION?$ebnf$2 →  ● }, from: 7
+83: {variable →  ● variable$string$1}, from: 7
+84: {variable →  ● variable$string$2}, from: 7
+85: {variable →  ● variable$string$3}, from: 7
+86: {variable →  ● variable$string$4}, from: 7
+87: {variable →  ● variable$string$5}, from: 7
+88: {variable →  ● variable$string$6}, from: 7
+89: {qualifier →  ● qualifier$string$1}, from: 7
+90: {qualifier →  ● qualifier$string$2}, from: 7
+91: {article$string$1 →  ● "d" "e"}, from: 7
+92: {article$string$2 →  ● "h" "e" "t"}, from: 7
+93: {article$string$3 →  ● "e" "e" "n"}, from: 7
+94: {DESC_ITEM → preposition? article? ● descriptive}, from: 7
+95: {DESC_ITEM → preposition? article? ● variable}, from: 7
+96: {ACTION? → HELP? MOD? ACTION?$ebnf$2 ● VAR HELP?}, from: 4
+97: {variable$string$1 →  ● "w" "a" "r" "m" "e" " " "l" "u" "c" "h" "t"}, from: 7
+98: {variable$string$2 →  ● "k" "o" "u" "d" "e" " " "l" "u" "c" "h" "t"}, from: 7
+99: {variable$string$3 →  ● "k" "a" "m" "e" "r"}, from: 7
+100: {variable$string$4 →  ● "g" "a" "t"}, from: 7
+101: {variable$string$5 →  ● "m" "u" "u" "r"}, from: 7
+102: {variable$string$6 →  ● "p" "l" "a" "f" "o" "n" "d"}, from: 7
+103: {qualifier$string$1 →  ● "b" "o" "v" "e" "n"}, from: 7
+104: {qualifier$string$2 →  ● "o" "n" "d" "e" "r"}, from: 7
+105: {descriptive →  ● descriptive$string$1}, from: 7
+106: {descriptive$string$1 →  ● "g" "e" "l" "i" "j" "k"}, from: 7
+
+Chart: 8
+0: {article$string$3 → "e" ● "e" "n"}, from: 7
+1: {hulpwerkwoord$string$3 → "e" ● "r"}, from: 7
+
+Chart: 9
+0: {article$string$3 → "e" "e" ● "n"}, from: 7
+
+Chart: 10
+0: {article$string$3 → "e" "e" "n" ● }, from: 7
+1: {article → article$string$3 ● }, from: 7
+2: {article? → article ● _}, from: 7
+3: {_ →  ● " "}, from: 10
+
+Chart: 11
+0: {_ → " " ● }, from: 10
+1: {article? → article _ ● }, from: 7
+2: {DESC_ITEM → preposition? article? ● variable}, from: 7
+3: {DESC_ITEM → preposition? article? ● descriptive}, from: 7
+4: {VAR_ITEM → preposition? article? ● variable}, from: 7
+5: {QUAL → preposition? article? ● qualifier}, from: 7
+6: {PROP → article? ● property}, from: 7
+7: {variable →  ● variable$string$1}, from: 11
+8: {variable →  ● variable$string$2}, from: 11
+9: {variable →  ● variable$string$3}, from: 11
+10: {variable →  ● variable$string$4}, from: 11
+11: {variable →  ● variable$string$5}, from: 11
+12: {variable →  ● variable$string$6}, from: 11
+13: {descriptive →  ● descriptive$string$1}, from: 11
+14: {qualifier →  ● qualifier$string$1}, from: 11
+15: {qualifier →  ● qualifier$string$2}, from: 11
+16: {variable$string$1 →  ● "w" "a" "r" "m" "e" " " "l" "u" "c" "h" "t"}, from: 11
+17: {variable$string$2 →  ● "k" "o" "u" "d" "e" " " "l" "u" "c" "h" "t"}, from: 11
+18: {variable$string$3 →  ● "k" "a" "m" "e" "r"}, from: 11
+19: {variable$string$4 →  ● "g" "a" "t"}, from: 11
+20: {variable$string$5 →  ● "m" "u" "u" "r"}, from: 11
+21: {variable$string$6 →  ● "p" "l" "a" "f" "o" "n" "d"}, from: 11
+22: {descriptive$string$1 →  ● "g" "e" "l" "i" "j" "k"}, from: 11
+23: {qualifier$string$1 →  ● "b" "o" "v" "e" "n"}, from: 11
+24: {qualifier$string$2 →  ● "o" "n" "d" "e" "r"}, from: 11
+
+Chart: 12
+0: {descriptive$string$1 → "g" ● "e" "l" "i" "j" "k"}, from: 11
+1: {variable$string$4 → "g" ● "a" "t"}, from: 11
+
+Chart: 13
+0: {variable$string$4 → "g" "a" ● "t"}, from: 11
+
+Chart: 14
+0: {variable$string$4 → "g" "a" "t" ● }, from: 11
+1: {variable → variable$string$4 ● }, from: 11
+2: {VAR_ITEM → preposition? article? variable ● }, from: 7
+3: {DESC_ITEM → preposition? article? variable ● }, from: 7
+4: {VAR → QUAL? VAR_ITEM ● }, from: 7
+5: {VAR → VAR_ITEM ● _ QUAL}, from: 7
+6: {DESC → DESC_ITEM ● }, from: 7
+7: {DESC → DESC_ITEM ● _ DESC}, from: 7
+8: {ACTION? → HELP? MOD? ACTION?$ebnf$2 VAR ● HELP?}, from: 4
+9: {ACTION? → HELP? VAR ● ACTION?$ebnf$1 MOD? HELP?}, from: 4
+10: {ACTION → HELP? VAR ● _ MOD HELP?}, from: 4
+11: {ACTION? → HELP? MOD? ACTION?$ebnf$2 VAR ● HELP?}, from: 4
+12: {_ →  ● " "}, from: 14
+13: {VAR_ITEM → DESC ● _ VAR_ITEM}, from: 7
+14: {HELP? →  ● }, from: 14
+15: {HELP? →  ● HELP}, from: 14
+16: {ACTION?$ebnf$1 →  ● _}, from: 14
+17: {ACTION?$ebnf$1 →  ● }, from: 14
+18: {ACTION? → HELP? MOD? ACTION?$ebnf$2 VAR HELP? ● }, from: 4
+19: {ACTION? → HELP? MOD? ACTION?$ebnf$2 VAR HELP? ● }, from: 4
+20: {HELP →  ● HELP$ebnf$1 hulpwerkwoord HELP$ebnf$2}, from: 14
+21: {HELP →  ● HELP HELP}, from: 14
+22: {ACTION? → HELP? VAR ACTION?$ebnf$1 ● MOD? HELP?}, from: 4
+23: {ACTION → ACTION? ● _ and _ ACTION}, from: 4
+24: {ACTION? → ACTION? ● _ QUAL}, from: 4
+25: {ACTION? → ACTION? ● _ and _ ACTION?}, from: 4
+26: {HYPOTHESIS → QUAL? if? ACTION? ● THEN ACTION?}, from: 0
+27: {HYPOTHESIS → QUAL? if? ACTION? ● THEN? ACTION}, from: 0
+28: {ACTION → ACTION? ● _ and _ ACTION}, from: 4
+29: {ACTION? → ACTION? ● _ QUAL}, from: 4
+30: {ACTION? → ACTION? ● _ and _ ACTION?}, from: 4
+31: {HYPOTHESIS → QUAL? if? ACTION? ● THEN ACTION?}, from: 0
+32: {HYPOTHESIS → QUAL? if? ACTION? ● THEN? ACTION}, from: 0
+33: {HELP$ebnf$1 →  ● _}, from: 14
+34: {HELP$ebnf$1 →  ● }, from: 14
+35: {MOD? →  ● }, from: 14
+36: {MOD? →  ● MOD}, from: 14
+37: {THEN →  ● then _}, from: 14
+38: {THEN? →  ● THEN?$ebnf$1 then _}, from: 14
+39: {THEN? →  ● _}, from: 14
+40: {THEN? →  ● }, from: 14
+41: {HELP → HELP$ebnf$1 ● hulpwerkwoord HELP$ebnf$2}, from: 14
+42: {ACTION? → HELP? VAR ACTION?$ebnf$1 MOD? ● HELP?}, from: 4
+43: {MOD →  ● modifier}, from: 14
+44: {then →  ● then$string$1}, from: 14
+45: {then →  ● ","}, from: 14
+46: {THEN?$ebnf$1 →  ● _}, from: 14
+47: {THEN?$ebnf$1 →  ● }, from: 14
+48: {HYPOTHESIS → QUAL? if? ACTION? THEN? ● ACTION}, from: 0
+49: {HYPOTHESIS → QUAL? if? ACTION? THEN? ● ACTION}, from: 0
+50: {hulpwerkwoord →  ● hulpwerkwoord$string$1}, from: 14
+51: {hulpwerkwoord →  ● hulpwerkwoord$string$2}, from: 14
+52: {hulpwerkwoord →  ● hulpwerkwoord$string$3}, from: 14
+53: {hulpwerkwoord →  ● hulpwerkwoord$string$4}, from: 14
+54: {hulpwerkwoord →  ● hulpwerkwoord$string$5}, from: 14
+55: {hulpwerkwoord →  ● hulpwerkwoord$string$6}, from: 14
+56: {ACTION? → HELP? VAR ACTION?$ebnf$1 MOD? HELP? ● }, from: 4
+57: {modifier →  ● modifier$string$1}, from: 14
+58: {modifier →  ● modifier$string$2}, from: 14
+59: {modifier →  ● modifier$string$3}, from: 14
+60: {modifier →  ● modifier$string$4}, from: 14
+61: {modifier →  ● modifier$string$5}, from: 14
+62: {modifier →  ● modifier$string$6}, from: 14
+63: {then$string$1 →  ● "d" "a" "n"}, from: 14
+64: {THEN? → THEN?$ebnf$1 ● then _}, from: 14
+65: {ACTION →  ● VAR _ interactor _ VAR}, from: 14
+66: {ACTION →  ● HELP? VAR _ MOD HELP?}, from: 14
+67: {ACTION →  ● HELP? MOD _ VAR HELP?}, from: 14
+68: {ACTION →  ● ACTION _ and _ ACTION?}, from: 14
+69: {ACTION →  ● ACTION? _ and _ ACTION}, from: 14
+70: {ACTION →  ● ACTION _ QUAL}, from: 14
+71: {hulpwerkwoord$string$1 →  ● "b" "l" "i" "j" "f" "t"}, from: 14
+72: {hulpwerkwoord$string$2 →  ● "g" "a" "a" "t"}, from: 14
+73: {hulpwerkwoord$string$3 →  ● "e" "r"}, from: 14
+74: {hulpwerkwoord$string$4 →  ● "i" "s"}, from: 14
+75: {hulpwerkwoord$string$5 →  ● "z" "i" "t"}, from: 14
+76: {hulpwerkwoord$string$6 →  ● "w" "o" "r" "d" "t"}, from: 14
+77: {ACTION → ACTION? ● _ and _ ACTION}, from: 4
+78: {ACTION? → ACTION? ● _ QUAL}, from: 4
+79: {ACTION? → ACTION? ● _ and _ ACTION?}, from: 4
+80: {HYPOTHESIS → QUAL? if? ACTION? ● THEN ACTION?}, from: 0
+81: {HYPOTHESIS → QUAL? if? ACTION? ● THEN? ACTION}, from: 0
+82: {modifier$string$1 →  ● "w" "a" "r" "m" "e" "r"}, from: 14
+83: {modifier$string$2 →  ● "m" "e" "e" "r"}, from: 14
+84: {modifier$string$3 →  ● "k" "o" "u" "d" "e" "r"}, from: 14
+85: {modifier$string$4 →  ● "m" "i" "n" "d" "e" "r"}, from: 14
+86: {modifier$string$5 →  ● "o" "n" "t" "s" "n" "a" "p" "t"}, from: 14
+87: {modifier$string$6 →  ● "g" "e" "l" "i" "j" "k"}, from: 14
+88: {VAR →  ● QUAL? VAR_ITEM}, from: 14
+89: {VAR →  ● VAR_ITEM _ QUAL}, from: 14
+90: {ACTION → HELP? ● VAR _ MOD HELP?}, from: 14
+91: {ACTION → HELP? ● MOD _ VAR HELP?}, from: 14
+92: {ACTION? →  ● ACTION}, from: 14
+93: {ACTION? →  ● HELP? VAR ACTION?$ebnf$1 MOD? HELP?}, from: 14
+94: {ACTION? →  ● HELP? MOD? ACTION?$ebnf$2 VAR HELP?}, from: 14
+95: {ACTION? →  ● ACTION? _ and _ ACTION?}, from: 14
+96: {ACTION? →  ● ACTION? _ QUAL}, from: 14
+97: {HYPOTHESIS → QUAL? if? ACTION? THEN? ● ACTION}, from: 0
+98: {QUAL? →  ● }, from: 14
+99: {QUAL? →  ● QUAL QUAL?$ebnf$1}, from: 14
+100: {VAR_ITEM →  ● preposition? article? variable}, from: 14
+101: {VAR_ITEM →  ● PROP _ VAR_ITEM}, from: 14
+102: {VAR_ITEM →  ● DESC _ VAR_ITEM}, from: 14
+103: {VAR_ITEM →  ● QUAL _ VAR_ITEM}, from: 14
+104: {ACTION? → HELP? ● VAR ACTION?$ebnf$1 MOD? HELP?}, from: 14
+105: {ACTION? → HELP? ● MOD? ACTION?$ebnf$2 VAR HELP?}, from: 14
+106: {VAR → QUAL? ● VAR_ITEM}, from: 14
+107: {QUAL →  ● preposition? article? qualifier}, from: 14
+108: {preposition? →  ● }, from: 14
+109: {preposition? →  ● preposition _}, from: 14
+110: {PROP →  ● property _ and _ PROP}, from: 14
+111: {PROP →  ● article? property}, from: 14
+112: {DESC →  ● DESC_ITEM _ DESC}, from: 14
+113: {DESC →  ● DESC_ITEM}, from: 14
+114: {ACTION? → HELP? MOD? ● ACTION?$ebnf$2 VAR HELP?}, from: 14
+115: {QUAL → preposition? ● article? qualifier}, from: 14
+116: {VAR_ITEM → preposition? ● article? variable}, from: 14
+117: {preposition →  ● preposition$string$1}, from: 14
+118: {preposition →  ● preposition$string$2}, from: 14
+119: {article? →  ● }, from: 14
+120: {article? →  ● article _}, from: 14
+121: {DESC_ITEM →  ● preposition? article? descriptive}, from: 14
+122: {DESC_ITEM →  ● preposition? article? variable}, from: 14
+123: {ACTION?$ebnf$2 →  ● _}, from: 14
+124: {ACTION?$ebnf$2 →  ● }, from: 14
+125: {preposition$string$1 →  ● "i" "n"}, from: 14
+126: {preposition$string$2 →  ● "v" "a" "n"}, from: 14
+127: {VAR_ITEM → preposition? article? ● variable}, from: 14
+128: {QUAL → preposition? article? ● qualifier}, from: 14
+129: {PROP → article? ● property}, from: 14
+130: {article →  ● article$string$1}, from: 14
+131: {article →  ● article$string$2}, from: 14
+132: {article →  ● article$string$3}, from: 14
+133: {DESC_ITEM → preposition? ● article? descriptive}, from: 14
+134: {DESC_ITEM → preposition? ● article? variable}, from: 14
+135: {ACTION? → HELP? MOD? ACTION?$ebnf$2 ● VAR HELP?}, from: 14
+136: {variable →  ● variable$string$1}, from: 14
+137: {variable →  ● variable$string$2}, from: 14
+138: {variable →  ● variable$string$3}, from: 14
+139: {variable →  ● variable$string$4}, from: 14
+140: {variable →  ● variable$string$5}, from: 14
+141: {variable →  ● variable$string$6}, from: 14
+142: {qualifier →  ● qualifier$string$1}, from: 14
+143: {qualifier →  ● qualifier$string$2}, from: 14
+144: {article$string$1 →  ● "d" "e"}, from: 14
+145: {article$string$2 →  ● "h" "e" "t"}, from: 14
+146: {article$string$3 →  ● "e" "e" "n"}, from: 14
+147: {DESC_ITEM → preposition? article? ● descriptive}, from: 14
+148: {DESC_ITEM → preposition? article? ● variable}, from: 14
+149: {variable$string$1 →  ● "w" "a" "r" "m" "e" " " "l" "u" "c" "h" "t"}, from: 14
+150: {variable$string$2 →  ● "k" "o" "u" "d" "e" " " "l" "u" "c" "h" "t"}, from: 14
+151: {variable$string$3 →  ● "k" "a" "m" "e" "r"}, from: 14
+152: {variable$string$4 →  ● "g" "a" "t"}, from: 14
+153: {variable$string$5 →  ● "m" "u" "u" "r"}, from: 14
+154: {variable$string$6 →  ● "p" "l" "a" "f" "o" "n" "d"}, from: 14
+155: {qualifier$string$1 →  ● "b" "o" "v" "e" "n"}, from: 14
+156: {qualifier$string$2 →  ● "o" "n" "d" "e" "r"}, from: 14
+157: {descriptive →  ● descriptive$string$1}, from: 14
+158: {descriptive$string$1 →  ● "g" "e" "l" "i" "j" "k"}, from: 14
+
+Chart: 15
+0: {_ → " " ● }, from: 14
+1: {ACTION?$ebnf$2 → _ ● }, from: 14
+2: {ACTION? → ACTION? _ ● and _ ACTION?}, from: 4
+3: {ACTION? → ACTION? _ ● QUAL}, from: 4
+4: {ACTION → ACTION? _ ● and _ ACTION}, from: 4
+5: {THEN?$ebnf$1 → _ ● }, from: 14
+6: {THEN? → _ ● }, from: 14
+7: {HELP$ebnf$1 → _ ● }, from: 14
+8: {ACTION? → ACTION? _ ● and _ ACTION?}, from: 4
+9: {ACTION? → ACTION? _ ● QUAL}, from: 4
+10: {ACTION → ACTION? _ ● and _ ACTION}, from: 4
+11: {ACTION? → ACTION? _ ● and _ ACTION?}, from: 4
+12: {ACTION? → ACTION? _ ● QUAL}, from: 4
+13: {ACTION → ACTION? _ ● and _ ACTION}, from: 4
+14: {ACTION?$ebnf$1 → _ ● }, from: 14
+15: {VAR_ITEM → DESC _ ● VAR_ITEM}, from: 7
+16: {ACTION → HELP? VAR _ ● MOD HELP?}, from: 4
+17: {DESC → DESC_ITEM _ ● DESC}, from: 7
+18: {VAR → VAR_ITEM _ ● QUAL}, from: 7
+19: {ACTION? → HELP? MOD? ACTION?$ebnf$2 ● VAR HELP?}, from: 14
+20: {and →  ● and$string$1}, from: 15
+21: {QUAL →  ● preposition? article? qualifier}, from: 15
+22: {THEN? → THEN?$ebnf$1 ● then _}, from: 14
+23: {HYPOTHESIS → QUAL? if? ACTION? THEN? ● ACTION}, from: 0
+24: {HYPOTHESIS → QUAL? if? ACTION? THEN? ● ACTION}, from: 0
+25: {HYPOTHESIS → QUAL? if? ACTION? THEN? ● ACTION}, from: 0
+26: {HELP → HELP$ebnf$1 ● hulpwerkwoord HELP$ebnf$2}, from: 14
+27: {ACTION? → HELP? VAR ACTION?$ebnf$1 ● MOD? HELP?}, from: 4
+28: {VAR_ITEM →  ● preposition? article? variable}, from: 15
+29: {VAR_ITEM →  ● PROP _ VAR_ITEM}, from: 15
+30: {VAR_ITEM →  ● DESC _ VAR_ITEM}, from: 15
+31: {VAR_ITEM →  ● QUAL _ VAR_ITEM}, from: 15
+32: {MOD →  ● modifier}, from: 15
+33: {DESC →  ● DESC_ITEM _ DESC}, from: 15
+34: {DESC →  ● DESC_ITEM}, from: 15
+35: {VAR →  ● QUAL? VAR_ITEM}, from: 15
+36: {VAR →  ● VAR_ITEM _ QUAL}, from: 15
+37: {and$string$1 →  ● "e" "n"}, from: 15
+38: {preposition? →  ● }, from: 15
+39: {preposition? →  ● preposition _}, from: 15
+40: {then →  ● then$string$1}, from: 15
+41: {then →  ● ","}, from: 15
+42: {ACTION →  ● VAR _ interactor _ VAR}, from: 15
+43: {ACTION →  ● HELP? VAR _ MOD HELP?}, from: 15
+44: {ACTION →  ● HELP? MOD _ VAR HELP?}, from: 15
+45: {ACTION →  ● ACTION _ and _ ACTION?}, from: 15
+46: {ACTION →  ● ACTION? _ and _ ACTION}, from: 15
+47: {ACTION →  ● ACTION _ QUAL}, from: 15
+48: {hulpwerkwoord →  ● hulpwerkwoord$string$1}, from: 15
+49: {hulpwerkwoord →  ● hulpwerkwoord$string$2}, from: 15
+50: {hulpwerkwoord →  ● hulpwerkwoord$string$3}, from: 15
+51: {hulpwerkwoord →  ● hulpwerkwoord$string$4}, from: 15
+52: {hulpwerkwoord →  ● hulpwerkwoord$string$5}, from: 15
+53: {hulpwerkwoord →  ● hulpwerkwoord$string$6}, from: 15
+54: {MOD? →  ● }, from: 15
+55: {MOD? →  ● MOD}, from: 15
+56: {PROP →  ● property _ and _ PROP}, from: 15
+57: {PROP →  ● article? property}, from: 15
+58: {modifier →  ● modifier$string$1}, from: 15
+59: {modifier →  ● modifier$string$2}, from: 15
+60: {modifier →  ● modifier$string$3}, from: 15
+61: {modifier →  ● modifier$string$4}, from: 15
+62: {modifier →  ● modifier$string$5}, from: 15
+63: {modifier →  ● modifier$string$6}, from: 15
+64: {DESC_ITEM →  ● preposition? article? descriptive}, from: 15
+65: {DESC_ITEM →  ● preposition? article? variable}, from: 15
+66: {QUAL? →  ● }, from: 15
+67: {QUAL? →  ● QUAL QUAL?$ebnf$1}, from: 15
+68: {VAR_ITEM → preposition? ● article? variable}, from: 15
+69: {QUAL → preposition? ● article? qualifier}, from: 15
+70: {preposition →  ● preposition$string$1}, from: 15
+71: {preposition →  ● preposition$string$2}, from: 15
+72: {then$string$1 →  ● "d" "a" "n"}, from: 15
+73: {HELP? →  ● }, from: 15
+74: {HELP? →  ● HELP}, from: 15
+75: {ACTION? →  ● ACTION}, from: 15
+76: {ACTION? →  ● HELP? VAR ACTION?$ebnf$1 MOD? HELP?}, from: 15
+77: {ACTION? →  ● HELP? MOD? ACTION?$ebnf$2 VAR HELP?}, from: 15
+78: {ACTION? →  ● ACTION? _ and _ ACTION?}, from: 15
+79: {ACTION? →  ● ACTION? _ QUAL}, from: 15
+80: {hulpwerkwoord$string$1 →  ● "b" "l" "i" "j" "f" "t"}, from: 15
+81: {hulpwerkwoord$string$2 →  ● "g" "a" "a" "t"}, from: 15
+82: {hulpwerkwoord$string$3 →  ● "e" "r"}, from: 15
+83: {hulpwerkwoord$string$4 →  ● "i" "s"}, from: 15
+84: {hulpwerkwoord$string$5 →  ● "z" "i" "t"}, from: 15
+85: {hulpwerkwoord$string$6 →  ● "w" "o" "r" "d" "t"}, from: 15
+86: {ACTION? → HELP? VAR ACTION?$ebnf$1 MOD? ● HELP?}, from: 4
+87: {article? →  ● }, from: 15
+88: {article? →  ● article _}, from: 15
+89: {modifier$string$1 →  ● "w" "a" "r" "m" "e" "r"}, from: 15
+90: {modifier$string$2 →  ● "m" "e" "e" "r"}, from: 15
+91: {modifier$string$3 →  ● "k" "o" "u" "d" "e" "r"}, from: 15
+92: {modifier$string$4 →  ● "m" "i" "n" "d" "e" "r"}, from: 15
+93: {modifier$string$5 →  ● "o" "n" "t" "s" "n" "a" "p" "t"}, from: 15
+94: {modifier$string$6 →  ● "g" "e" "l" "i" "j" "k"}, from: 15
+95: {DESC_ITEM → preposition? ● article? descriptive}, from: 15
+96: {DESC_ITEM → preposition? ● article? variable}, from: 15
+97: {VAR → QUAL? ● VAR_ITEM}, from: 15
+98: {preposition$string$1 →  ● "i" "n"}, from: 15
+99: {preposition$string$2 →  ● "v" "a" "n"}, from: 15
+100: {ACTION → HELP? ● MOD _ VAR HELP?}, from: 15
+101: {ACTION → HELP? ● VAR _ MOD HELP?}, from: 15
+102: {HELP →  ● HELP$ebnf$1 hulpwerkwoord HELP$ebnf$2}, from: 15
+103: {HELP →  ● HELP HELP}, from: 15
+104: {ACTION? → HELP? ● VAR ACTION?$ebnf$1 MOD? HELP?}, from: 15
+105: {ACTION? → HELP? ● MOD? ACTION?$ebnf$2 VAR HELP?}, from: 15
+106: {ACTION? → HELP? VAR ACTION?$ebnf$1 MOD? HELP? ● }, from: 4
+107: {QUAL → preposition? article? ● qualifier}, from: 15
+108: {VAR_ITEM → preposition? article? ● variable}, from: 15
+109: {PROP → article? ● property}, from: 15
+110: {article →  ● article$string$1}, from: 15
+111: {article →  ● article$string$2}, from: 15
+112: {article →  ● article$string$3}, from: 15
+113: {DESC_ITEM → preposition? article? ● descriptive}, from: 15
+114: {DESC_ITEM → preposition? article? ● variable}, from: 15
+115: {HELP$ebnf$1 →  ● _}, from: 15
+116: {HELP$ebnf$1 →  ● }, from: 15
+117: {ACTION? → HELP? MOD? ● ACTION?$ebnf$2 VAR HELP?}, from: 15
+118: {ACTION → ACTION? ● _ and _ ACTION}, from: 4
+119: {ACTION? → ACTION? ● _ QUAL}, from: 4
+120: {ACTION? → ACTION? ● _ and _ ACTION?}, from: 4
+121: {HYPOTHESIS → QUAL? if? ACTION? ● THEN ACTION?}, from: 0
+122: {HYPOTHESIS → QUAL? if? ACTION? ● THEN? ACTION}, from: 0
+123: {qualifier →  ● qualifier$string$1}, from: 15
+124: {qualifier →  ● qualifier$string$2}, from: 15
+125: {variable →  ● variable$string$1}, from: 15
+126: {variable →  ● variable$string$2}, from: 15
+127: {variable →  ● variable$string$3}, from: 15
+128: {variable →  ● variable$string$4}, from: 15
+129: {variable →  ● variable$string$5}, from: 15
+130: {variable →  ● variable$string$6}, from: 15
+131: {article$string$1 →  ● "d" "e"}, from: 15
+132: {article$string$2 →  ● "h" "e" "t"}, from: 15
+133: {article$string$3 →  ● "e" "e" "n"}, from: 15
+134: {descriptive →  ● descriptive$string$1}, from: 15
+135: {_ →  ● " "}, from: 15
+136: {HELP → HELP$ebnf$1 ● hulpwerkwoord HELP$ebnf$2}, from: 15
+137: {ACTION?$ebnf$2 →  ● _}, from: 15
+138: {ACTION?$ebnf$2 →  ● }, from: 15
+139: {THEN →  ● then _}, from: 15
+140: {THEN? →  ● THEN?$ebnf$1 then _}, from: 15
+141: {THEN? →  ● _}, from: 15
+142: {THEN? →  ● }, from: 15
+143: {qualifier$string$1 →  ● "b" "o" "v" "e" "n"}, from: 15
+144: {qualifier$string$2 →  ● "o" "n" "d" "e" "r"}, from: 15
+145: {variable$string$1 →  ● "w" "a" "r" "m" "e" " " "l" "u" "c" "h" "t"}, from: 15
+146: {variable$string$2 →  ● "k" "o" "u" "d" "e" " " "l" "u" "c" "h" "t"}, from: 15
+147: {variable$string$3 →  ● "k" "a" "m" "e" "r"}, from: 15
+148: {variable$string$4 →  ● "g" "a" "t"}, from: 15
+149: {variable$string$5 →  ● "m" "u" "u" "r"}, from: 15
+150: {variable$string$6 →  ● "p" "l" "a" "f" "o" "n" "d"}, from: 15
+151: {descriptive$string$1 →  ● "g" "e" "l" "i" "j" "k"}, from: 15
+152: {ACTION? → HELP? MOD? ACTION?$ebnf$2 ● VAR HELP?}, from: 15
+153: {THEN?$ebnf$1 →  ● _}, from: 15
+154: {THEN?$ebnf$1 →  ● }, from: 15
+155: {HYPOTHESIS → QUAL? if? ACTION? THEN? ● ACTION}, from: 0
+156: {THEN? → THEN?$ebnf$1 ● then _}, from: 15
+
+Chart: 16
+0: {preposition$string$1 → "i" ● "n"}, from: 15
+1: {hulpwerkwoord$string$4 → "i" ● "s"}, from: 15
+
+Chart: 17
+0: {preposition$string$1 → "i" "n" ● }, from: 15
+1: {preposition → preposition$string$1 ● }, from: 15
+2: {preposition? → preposition ● _}, from: 15
+3: {_ →  ● " "}, from: 17
+
+Chart: 18
+0: {_ → " " ● }, from: 17
+1: {preposition? → preposition _ ● }, from: 15
+2: {DESC_ITEM → preposition? ● article? variable}, from: 15
+3: {DESC_ITEM → preposition? ● article? descriptive}, from: 15
+4: {VAR_ITEM → preposition? ● article? variable}, from: 15
+5: {QUAL → preposition? ● article? qualifier}, from: 15
+6: {article? →  ● }, from: 18
+7: {article? →  ● article _}, from: 18
+8: {QUAL → preposition? article? ● qualifier}, from: 15
+9: {VAR_ITEM → preposition? article? ● variable}, from: 15
+10: {DESC_ITEM → preposition? article? ● descriptive}, from: 15
+11: {DESC_ITEM → preposition? article? ● variable}, from: 15
+12: {article →  ● article$string$1}, from: 18
+13: {article →  ● article$string$2}, from: 18
+14: {article →  ● article$string$3}, from: 18
+15: {qualifier →  ● qualifier$string$1}, from: 18
+16: {qualifier →  ● qualifier$string$2}, from: 18
+17: {variable →  ● variable$string$1}, from: 18
+18: {variable →  ● variable$string$2}, from: 18
+19: {variable →  ● variable$string$3}, from: 18
+20: {variable →  ● variable$string$4}, from: 18
+21: {variable →  ● variable$string$5}, from: 18
+22: {variable →  ● variable$string$6}, from: 18
+23: {descriptive →  ● descriptive$string$1}, from: 18
+24: {article$string$1 →  ● "d" "e"}, from: 18
+25: {article$string$2 →  ● "h" "e" "t"}, from: 18
+26: {article$string$3 →  ● "e" "e" "n"}, from: 18
+27: {qualifier$string$1 →  ● "b" "o" "v" "e" "n"}, from: 18
+28: {qualifier$string$2 →  ● "o" "n" "d" "e" "r"}, from: 18
+29: {variable$string$1 →  ● "w" "a" "r" "m" "e" " " "l" "u" "c" "h" "t"}, from: 18
+30: {variable$string$2 →  ● "k" "o" "u" "d" "e" " " "l" "u" "c" "h" "t"}, from: 18
+31: {variable$string$3 →  ● "k" "a" "m" "e" "r"}, from: 18
+32: {variable$string$4 →  ● "g" "a" "t"}, from: 18
+33: {variable$string$5 →  ● "m" "u" "u" "r"}, from: 18
+34: {variable$string$6 →  ● "p" "l" "a" "f" "o" "n" "d"}, from: 18
+35: {descriptive$string$1 →  ● "g" "e" "l" "i" "j" "k"}, from: 18
+
+Chart: 19
+0: {article$string$1 → "d" ● "e"}, from: 18
+
+Chart: 20
+0: {article$string$1 → "d" "e" ● }, from: 18
+1: {article → article$string$1 ● }, from: 18
+2: {article? → article ● _}, from: 18
+3: {_ →  ● " "}, from: 20
+
+Chart: 21
+0: {_ → " " ● }, from: 20
+1: {article? → article _ ● }, from: 18
+2: {QUAL → preposition? article? ● qualifier}, from: 15
+3: {VAR_ITEM → preposition? article? ● variable}, from: 15
+4: {DESC_ITEM → preposition? article? ● descriptive}, from: 15
+5: {DESC_ITEM → preposition? article? ● variable}, from: 15
+6: {qualifier →  ● qualifier$string$1}, from: 21
+7: {qualifier →  ● qualifier$string$2}, from: 21
+8: {variable →  ● variable$string$1}, from: 21
+9: {variable →  ● variable$string$2}, from: 21
+10: {variable →  ● variable$string$3}, from: 21
+11: {variable →  ● variable$string$4}, from: 21
+12: {variable →  ● variable$string$5}, from: 21
+13: {variable →  ● variable$string$6}, from: 21
+14: {descriptive →  ● descriptive$string$1}, from: 21
+15: {qualifier$string$1 →  ● "b" "o" "v" "e" "n"}, from: 21
+16: {qualifier$string$2 →  ● "o" "n" "d" "e" "r"}, from: 21
+17: {variable$string$1 →  ● "w" "a" "r" "m" "e" " " "l" "u" "c" "h" "t"}, from: 21
+18: {variable$string$2 →  ● "k" "o" "u" "d" "e" " " "l" "u" "c" "h" "t"}, from: 21
+19: {variable$string$3 →  ● "k" "a" "m" "e" "r"}, from: 21
+20: {variable$string$4 →  ● "g" "a" "t"}, from: 21
+21: {variable$string$5 →  ● "m" "u" "u" "r"}, from: 21
+22: {variable$string$6 →  ● "p" "l" "a" "f" "o" "n" "d"}, from: 21
+23: {descriptive$string$1 →  ● "g" "e" "l" "i" "j" "k"}, from: 21
+
+Chart: 22
+0: {variable$string$5 → "m" ● "u" "u" "r"}, from: 21
+
+Chart: 23
+0: {variable$string$5 → "m" "u" ● "u" "r"}, from: 21
+
+Chart: 24
+0: {variable$string$5 → "m" "u" "u" ● "r"}, from: 21
+
+Chart: 25
+0: {variable$string$5 → "m" "u" "u" "r" ● }, from: 21
+1: {variable → variable$string$5 ● }, from: 21
+2: {DESC_ITEM → preposition? article? variable ● }, from: 15
+3: {VAR_ITEM → preposition? article? variable ● }, from: 15
+4: {DESC → DESC_ITEM ● }, from: 15
+5: {DESC → DESC_ITEM ● _ DESC}, from: 15
+6: {VAR → QUAL? VAR_ITEM ● }, from: 15
+7: {VAR → VAR_ITEM ● _ QUAL}, from: 15
+8: {VAR_ITEM → DESC _ VAR_ITEM ● }, from: 7
+9: {VAR_ITEM → DESC ● _ VAR_ITEM}, from: 15
+10: {DESC → DESC_ITEM _ DESC ● }, from: 7
+11: {_ →  ● " "}, from: 25
+12: {ACTION? → HELP? MOD? ACTION?$ebnf$2 VAR ● HELP?}, from: 15
+13: {ACTION? → HELP? VAR ● ACTION?$ebnf$1 MOD? HELP?}, from: 15
+14: {ACTION → HELP? VAR ● _ MOD HELP?}, from: 15
+15: {ACTION → VAR ● _ interactor _ VAR}, from: 15
+16: {ACTION? → HELP? MOD? ACTION?$ebnf$2 VAR ● HELP?}, from: 14
+17: {VAR → QUAL? VAR_ITEM ● }, from: 7
+18: {VAR → VAR_ITEM ● _ QUAL}, from: 7
+19: {VAR_ITEM → DESC ● _ VAR_ITEM}, from: 7
+20: {HELP? →  ● }, from: 25
+21: {HELP? →  ● HELP}, from: 25
+22: {ACTION?$ebnf$1 →  ● _}, from: 25
+23: {ACTION?$ebnf$1 →  ● }, from: 25
+24: {ACTION? → HELP? MOD? ACTION?$ebnf$2 VAR ● HELP?}, from: 4
+25: {ACTION? → HELP? VAR ● ACTION?$ebnf$1 MOD? HELP?}, from: 4
+26: {ACTION → HELP? VAR ● _ MOD HELP?}, from: 4
+27: {ACTION? → HELP? MOD? ACTION?$ebnf$2 VAR ● HELP?}, from: 4
+28: {ACTION? → HELP? MOD? ACTION?$ebnf$2 VAR HELP? ● }, from: 14
+29: {ACTION? → HELP? MOD? ACTION?$ebnf$2 VAR HELP? ● }, from: 15
+30: {HELP →  ● HELP$ebnf$1 hulpwerkwoord HELP$ebnf$2}, from: 25
+31: {HELP →  ● HELP HELP}, from: 25
+32: {ACTION? → HELP? VAR ACTION?$ebnf$1 ● MOD? HELP?}, from: 15
+33: {ACTION? → HELP? MOD? ACTION?$ebnf$2 VAR HELP? ● }, from: 4
+34: {ACTION? → HELP? VAR ACTION?$ebnf$1 ● MOD? HELP?}, from: 4
+35: {ACTION? → HELP? MOD? ACTION?$ebnf$2 VAR HELP? ● }, from: 4
+36: {ACTION? → ACTION? ● _ QUAL}, from: 14
+37: {ACTION? → ACTION? ● _ and _ ACTION?}, from: 14
+38: {ACTION → ACTION? ● _ and _ ACTION}, from: 14
+39: {ACTION? → ACTION? ● _ QUAL}, from: 15
+40: {ACTION? → ACTION? ● _ and _ ACTION?}, from: 15
+41: {ACTION → ACTION? ● _ and _ ACTION}, from: 15
+42: {HELP$ebnf$1 →  ● _}, from: 25
+43: {HELP$ebnf$1 →  ● }, from: 25
+44: {MOD? →  ● }, from: 25
+45: {MOD? →  ● MOD}, from: 25
+46: {ACTION → ACTION? ● _ and _ ACTION}, from: 4
+47: {ACTION? → ACTION? ● _ QUAL}, from: 4
+48: {ACTION? → ACTION? ● _ and _ ACTION?}, from: 4
+49: {HYPOTHESIS → QUAL? if? ACTION? ● THEN ACTION?}, from: 0
+50: {HYPOTHESIS → QUAL? if? ACTION? ● THEN? ACTION}, from: 0
+51: {ACTION → ACTION? ● _ and _ ACTION}, from: 4
+52: {ACTION? → ACTION? ● _ QUAL}, from: 4
+53: {ACTION? → ACTION? ● _ and _ ACTION?}, from: 4
+54: {HYPOTHESIS → QUAL? if? ACTION? ● THEN ACTION?}, from: 0
+55: {HYPOTHESIS → QUAL? if? ACTION? ● THEN? ACTION}, from: 0
+56: {HELP → HELP$ebnf$1 ● hulpwerkwoord HELP$ebnf$2}, from: 25
+57: {ACTION? → HELP? VAR ACTION?$ebnf$1 MOD? ● HELP?}, from: 4
+58: {ACTION? → HELP? VAR ACTION?$ebnf$1 MOD? ● HELP?}, from: 15
+59: {MOD →  ● modifier}, from: 25
+60: {THEN →  ● then _}, from: 25
+61: {THEN? →  ● THEN?$ebnf$1 then _}, from: 25
+62: {THEN? →  ● _}, from: 25
+63: {THEN? →  ● }, from: 25
+64: {hulpwerkwoord →  ● hulpwerkwoord$string$1}, from: 25
+65: {hulpwerkwoord →  ● hulpwerkwoord$string$2}, from: 25
+66: {hulpwerkwoord →  ● hulpwerkwoord$string$3}, from: 25
+67: {hulpwerkwoord →  ● hulpwerkwoord$string$4}, from: 25
+68: {hulpwerkwoord →  ● hulpwerkwoord$string$5}, from: 25
+69: {hulpwerkwoord →  ● hulpwerkwoord$string$6}, from: 25
+70: {ACTION? → HELP? VAR ACTION?$ebnf$1 MOD? HELP? ● }, from: 4
+71: {ACTION? → HELP? VAR ACTION?$ebnf$1 MOD? HELP? ● }, from: 15
+72: {modifier →  ● modifier$string$1}, from: 25
+73: {modifier →  ● modifier$string$2}, from: 25
+74: {modifier →  ● modifier$string$3}, from: 25
+75: {modifier →  ● modifier$string$4}, from: 25
+76: {modifier →  ● modifier$string$5}, from: 25
+77: {modifier →  ● modifier$string$6}, from: 25
+78: {then →  ● then$string$1}, from: 25
+79: {then →  ● ","}, from: 25
+80: {THEN?$ebnf$1 →  ● _}, from: 25
+81: {THEN?$ebnf$1 →  ● }, from: 25
+82: {HYPOTHESIS → QUAL? if? ACTION? THEN? ● ACTION}, from: 0
+83: {HYPOTHESIS → QUAL? if? ACTION? THEN? ● ACTION}, from: 0
+84: {hulpwerkwoord$string$1 →  ● "b" "l" "i" "j" "f" "t"}, from: 25
+85: {hulpwerkwoord$string$2 →  ● "g" "a" "a" "t"}, from: 25
+86: {hulpwerkwoord$string$3 →  ● "e" "r"}, from: 25
+87: {hulpwerkwoord$string$4 →  ● "i" "s"}, from: 25
+88: {hulpwerkwoord$string$5 →  ● "z" "i" "t"}, from: 25
+89: {hulpwerkwoord$string$6 →  ● "w" "o" "r" "d" "t"}, from: 25
+90: {ACTION → ACTION? ● _ and _ ACTION}, from: 4
+91: {ACTION? → ACTION? ● _ QUAL}, from: 4
+92: {ACTION? → ACTION? ● _ and _ ACTION?}, from: 4
+93: {HYPOTHESIS → QUAL? if? ACTION? ● THEN ACTION?}, from: 0
+94: {HYPOTHESIS → QUAL? if? ACTION? ● THEN? ACTION}, from: 0
+95: {ACTION? → ACTION? ● _ QUAL}, from: 15
+96: {ACTION? → ACTION? ● _ and _ ACTION?}, from: 15
+97: {ACTION → ACTION? ● _ and _ ACTION}, from: 15
+98: {modifier$string$1 →  ● "w" "a" "r" "m" "e" "r"}, from: 25
+99: {modifier$string$2 →  ● "m" "e" "e" "r"}, from: 25
+100: {modifier$string$3 →  ● "k" "o" "u" "d" "e" "r"}, from: 25
+101: {modifier$string$4 →  ● "m" "i" "n" "d" "e" "r"}, from: 25
+102: {modifier$string$5 →  ● "o" "n" "t" "s" "n" "a" "p" "t"}, from: 25
+103: {modifier$string$6 →  ● "g" "e" "l" "i" "j" "k"}, from: 25
+104: {then$string$1 →  ● "d" "a" "n"}, from: 25
+105: {THEN? → THEN?$ebnf$1 ● then _}, from: 25
+106: {ACTION →  ● VAR _ interactor _ VAR}, from: 25
+107: {ACTION →  ● HELP? VAR _ MOD HELP?}, from: 25
+108: {ACTION →  ● HELP? MOD _ VAR HELP?}, from: 25
+109: {ACTION →  ● ACTION _ and _ ACTION?}, from: 25
+110: {ACTION →  ● ACTION? _ and _ ACTION}, from: 25
+111: {ACTION →  ● ACTION _ QUAL}, from: 25
+112: {HYPOTHESIS → QUAL? if? ACTION? THEN? ● ACTION}, from: 0
+113: {VAR →  ● QUAL? VAR_ITEM}, from: 25
+114: {VAR →  ● VAR_ITEM _ QUAL}, from: 25
+115: {ACTION → HELP? ● VAR _ MOD HELP?}, from: 25
+116: {ACTION → HELP? ● MOD _ VAR HELP?}, from: 25
+117: {ACTION? →  ● ACTION}, from: 25
+118: {ACTION? →  ● HELP? VAR ACTION?$ebnf$1 MOD? HELP?}, from: 25
+119: {ACTION? →  ● HELP? MOD? ACTION?$ebnf$2 VAR HELP?}, from: 25
+120: {ACTION? →  ● ACTION? _ and _ ACTION?}, from: 25
+121: {ACTION? →  ● ACTION? _ QUAL}, from: 25
+122: {QUAL? →  ● }, from: 25
+123: {QUAL? →  ● QUAL QUAL?$ebnf$1}, from: 25
+124: {VAR_ITEM →  ● preposition? article? variable}, from: 25
+125: {VAR_ITEM →  ● PROP _ VAR_ITEM}, from: 25
+126: {VAR_ITEM →  ● DESC _ VAR_ITEM}, from: 25
+127: {VAR_ITEM →  ● QUAL _ VAR_ITEM}, from: 25
+128: {ACTION? → HELP? ● VAR ACTION?$ebnf$1 MOD? HELP?}, from: 25
+129: {ACTION? → HELP? ● MOD? ACTION?$ebnf$2 VAR HELP?}, from: 25
+130: {VAR → QUAL? ● VAR_ITEM}, from: 25
+131: {QUAL →  ● preposition? article? qualifier}, from: 25
+132: {preposition? →  ● }, from: 25
+133: {preposition? →  ● preposition _}, from: 25
+134: {PROP →  ● property _ and _ PROP}, from: 25
+135: {PROP →  ● article? property}, from: 25
+136: {DESC →  ● DESC_ITEM _ DESC}, from: 25
+137: {DESC →  ● DESC_ITEM}, from: 25
+138: {ACTION? → HELP? MOD? ● ACTION?$ebnf$2 VAR HELP?}, from: 25
+139: {QUAL → preposition? ● article? qualifier}, from: 25
+140: {VAR_ITEM → preposition? ● article? variable}, from: 25
+141: {preposition →  ● preposition$string$1}, from: 25
+142: {preposition →  ● preposition$string$2}, from: 25
+143: {article? →  ● }, from: 25
+144: {article? →  ● article _}, from: 25
+145: {DESC_ITEM →  ● preposition? article? descriptive}, from: 25
+146: {DESC_ITEM →  ● preposition? article? variable}, from: 25
+147: {ACTION?$ebnf$2 →  ● _}, from: 25
+148: {ACTION?$ebnf$2 →  ● }, from: 25
+149: {preposition$string$1 →  ● "i" "n"}, from: 25
+150: {preposition$string$2 →  ● "v" "a" "n"}, from: 25
+151: {VAR_ITEM → preposition? article? ● variable}, from: 25
+152: {QUAL → preposition? article? ● qualifier}, from: 25
+153: {PROP → article? ● property}, from: 25
+154: {article →  ● article$string$1}, from: 25
+155: {article →  ● article$string$2}, from: 25
+156: {article →  ● article$string$3}, from: 25
+157: {DESC_ITEM → preposition? ● article? descriptive}, from: 25
+158: {DESC_ITEM → preposition? ● article? variable}, from: 25
+159: {ACTION? → HELP? MOD? ACTION?$ebnf$2 ● VAR HELP?}, from: 25
+160: {variable →  ● variable$string$1}, from: 25
+161: {variable →  ● variable$string$2}, from: 25
+162: {variable →  ● variable$string$3}, from: 25
+163: {variable →  ● variable$string$4}, from: 25
+164: {variable →  ● variable$string$5}, from: 25
+165: {variable →  ● variable$string$6}, from: 25
+166: {qualifier →  ● qualifier$string$1}, from: 25
+167: {qualifier →  ● qualifier$string$2}, from: 25
+168: {article$string$1 →  ● "d" "e"}, from: 25
+169: {article$string$2 →  ● "h" "e" "t"}, from: 25
+170: {article$string$3 →  ● "e" "e" "n"}, from: 25
+171: {DESC_ITEM → preposition? article? ● descriptive}, from: 25
+172: {DESC_ITEM → preposition? article? ● variable}, from: 25
+173: {variable$string$1 →  ● "w" "a" "r" "m" "e" " " "l" "u" "c" "h" "t"}, from: 25
+174: {variable$string$2 →  ● "k" "o" "u" "d" "e" " " "l" "u" "c" "h" "t"}, from: 25
+175: {variable$string$3 →  ● "k" "a" "m" "e" "r"}, from: 25
+176: {variable$string$4 →  ● "g" "a" "t"}, from: 25
+177: {variable$string$5 →  ● "m" "u" "u" "r"}, from: 25
+178: {variable$string$6 →  ● "p" "l" "a" "f" "o" "n" "d"}, from: 25
+179: {qualifier$string$1 →  ● "b" "o" "v" "e" "n"}, from: 25
+180: {qualifier$string$2 →  ● "o" "n" "d" "e" "r"}, from: 25
+181: {descriptive →  ● descriptive$string$1}, from: 25
+182: {descriptive$string$1 →  ● "g" "e" "l" "i" "j" "k"}, from: 25
+
+Chart: 26
+0: {_ → " " ● }, from: 25
+1: {ACTION?$ebnf$2 → _ ● }, from: 25
+2: {ACTION → ACTION? _ ● and _ ACTION}, from: 15
+3: {ACTION? → ACTION? _ ● and _ ACTION?}, from: 15
+4: {ACTION? → ACTION? _ ● QUAL}, from: 15
+5: {ACTION? → ACTION? _ ● and _ ACTION?}, from: 4
+6: {ACTION? → ACTION? _ ● QUAL}, from: 4
+7: {ACTION → ACTION? _ ● and _ ACTION}, from: 4
+8: {THEN?$ebnf$1 → _ ● }, from: 25
+9: {THEN? → _ ● }, from: 25
+10: {ACTION? → ACTION? _ ● and _ ACTION?}, from: 4
+11: {ACTION? → ACTION? _ ● QUAL}, from: 4
+12: {ACTION → ACTION? _ ● and _ ACTION}, from: 4
+13: {ACTION? → ACTION? _ ● and _ ACTION?}, from: 4
+14: {ACTION? → ACTION? _ ● QUAL}, from: 4
+15: {ACTION → ACTION? _ ● and _ ACTION}, from: 4
+16: {HELP$ebnf$1 → _ ● }, from: 25
+17: {ACTION → ACTION? _ ● and _ ACTION}, from: 15
+18: {ACTION? → ACTION? _ ● and _ ACTION?}, from: 15
+19: {ACTION? → ACTION? _ ● QUAL}, from: 15
+20: {ACTION → ACTION? _ ● and _ ACTION}, from: 14
+21: {ACTION? → ACTION? _ ● and _ ACTION?}, from: 14
+22: {ACTION? → ACTION? _ ● QUAL}, from: 14
+23: {ACTION → HELP? VAR _ ● MOD HELP?}, from: 4
+24: {ACTION?$ebnf$1 → _ ● }, from: 25
+25: {VAR_ITEM → DESC _ ● VAR_ITEM}, from: 7
+26: {VAR → VAR_ITEM _ ● QUAL}, from: 7
+27: {ACTION → VAR _ ● interactor _ VAR}, from: 15
+28: {ACTION → HELP? VAR _ ● MOD HELP?}, from: 15
+29: {VAR_ITEM → DESC _ ● VAR_ITEM}, from: 15
+30: {VAR → VAR_ITEM _ ● QUAL}, from: 15
+31: {DESC → DESC_ITEM _ ● DESC}, from: 15
+32: {ACTION? → HELP? MOD? ACTION?$ebnf$2 ● VAR HELP?}, from: 25
+33: {and →  ● and$string$1}, from: 26
+34: {QUAL →  ● preposition? article? qualifier}, from: 26
+35: {THEN? → THEN?$ebnf$1 ● then _}, from: 25
+36: {HYPOTHESIS → QUAL? if? ACTION? THEN? ● ACTION}, from: 0
+37: {HYPOTHESIS → QUAL? if? ACTION? THEN? ● ACTION}, from: 0
+38: {HYPOTHESIS → QUAL? if? ACTION? THEN? ● ACTION}, from: 0
+39: {HELP → HELP$ebnf$1 ● hulpwerkwoord HELP$ebnf$2}, from: 25
+40: {MOD →  ● modifier}, from: 26
+41: {ACTION? → HELP? VAR ACTION?$ebnf$1 ● MOD? HELP?}, from: 4
+42: {ACTION? → HELP? VAR ACTION?$ebnf$1 ● MOD? HELP?}, from: 15
+43: {VAR_ITEM →  ● preposition? article? variable}, from: 26
+44: {VAR_ITEM →  ● PROP _ VAR_ITEM}, from: 26
+45: {VAR_ITEM →  ● DESC _ VAR_ITEM}, from: 26
+46: {VAR_ITEM →  ● QUAL _ VAR_ITEM}, from: 26
+47: {DESC →  ● DESC_ITEM _ DESC}, from: 26
+48: {DESC →  ● DESC_ITEM}, from: 26
+49: {VAR →  ● QUAL? VAR_ITEM}, from: 26
+50: {VAR →  ● VAR_ITEM _ QUAL}, from: 26
+51: {and$string$1 →  ● "e" "n"}, from: 26
+52: {preposition? →  ● }, from: 26
+53: {preposition? →  ● preposition _}, from: 26
+54: {then →  ● then$string$1}, from: 26
+55: {then →  ● ","}, from: 26
+56: {ACTION →  ● VAR _ interactor _ VAR}, from: 26
+57: {ACTION →  ● HELP? VAR _ MOD HELP?}, from: 26
+58: {ACTION →  ● HELP? MOD _ VAR HELP?}, from: 26
+59: {ACTION →  ● ACTION _ and _ ACTION?}, from: 26
+60: {ACTION →  ● ACTION? _ and _ ACTION}, from: 26
+61: {ACTION →  ● ACTION _ QUAL}, from: 26
+62: {hulpwerkwoord →  ● hulpwerkwoord$string$1}, from: 26
+63: {hulpwerkwoord →  ● hulpwerkwoord$string$2}, from: 26
+64: {hulpwerkwoord →  ● hulpwerkwoord$string$3}, from: 26
+65: {hulpwerkwoord →  ● hulpwerkwoord$string$4}, from: 26
+66: {hulpwerkwoord →  ● hulpwerkwoord$string$5}, from: 26
+67: {hulpwerkwoord →  ● hulpwerkwoord$string$6}, from: 26
+68: {modifier →  ● modifier$string$1}, from: 26
+69: {modifier →  ● modifier$string$2}, from: 26
+70: {modifier →  ● modifier$string$3}, from: 26
+71: {modifier →  ● modifier$string$4}, from: 26
+72: {modifier →  ● modifier$string$5}, from: 26
+73: {modifier →  ● modifier$string$6}, from: 26
+74: {MOD? →  ● }, from: 26
+75: {MOD? →  ● MOD}, from: 26
+76: {PROP →  ● property _ and _ PROP}, from: 26
+77: {PROP →  ● article? property}, from: 26
+78: {DESC_ITEM →  ● preposition? article? descriptive}, from: 26
+79: {DESC_ITEM →  ● preposition? article? variable}, from: 26
+80: {QUAL? →  ● }, from: 26
+81: {QUAL? →  ● QUAL QUAL?$ebnf$1}, from: 26
+82: {VAR_ITEM → preposition? ● article? variable}, from: 26
+83: {QUAL → preposition? ● article? qualifier}, from: 26
+84: {preposition →  ● preposition$string$1}, from: 26
+85: {preposition →  ● preposition$string$2}, from: 26
+86: {then$string$1 →  ● "d" "a" "n"}, from: 26
+87: {HELP? →  ● }, from: 26
+88: {HELP? →  ● HELP}, from: 26
+89: {ACTION? →  ● ACTION}, from: 26
+90: {ACTION? →  ● HELP? VAR ACTION?$ebnf$1 MOD? HELP?}, from: 26
+91: {ACTION? →  ● HELP? MOD? ACTION?$ebnf$2 VAR HELP?}, from: 26
+92: {ACTION? →  ● ACTION? _ and _ ACTION?}, from: 26
+93: {ACTION? →  ● ACTION? _ QUAL}, from: 26
+94: {hulpwerkwoord$string$1 →  ● "b" "l" "i" "j" "f" "t"}, from: 26
+95: {hulpwerkwoord$string$2 →  ● "g" "a" "a" "t"}, from: 26
+96: {hulpwerkwoord$string$3 →  ● "e" "r"}, from: 26
+97: {hulpwerkwoord$string$4 →  ● "i" "s"}, from: 26
+98: {hulpwerkwoord$string$5 →  ● "z" "i" "t"}, from: 26
+99: {hulpwerkwoord$string$6 →  ● "w" "o" "r" "d" "t"}, from: 26
+100: {modifier$string$1 →  ● "w" "a" "r" "m" "e" "r"}, from: 26
+101: {modifier$string$2 →  ● "m" "e" "e" "r"}, from: 26
+102: {modifier$string$3 →  ● "k" "o" "u" "d" "e" "r"}, from: 26
+103: {modifier$string$4 →  ● "m" "i" "n" "d" "e" "r"}, from: 26
+104: {modifier$string$5 →  ● "o" "n" "t" "s" "n" "a" "p" "t"}, from: 26
+105: {modifier$string$6 →  ● "g" "e" "l" "i" "j" "k"}, from: 26
+106: {ACTION? → HELP? VAR ACTION?$ebnf$1 MOD? ● HELP?}, from: 15
+107: {ACTION? → HELP? VAR ACTION?$ebnf$1 MOD? ● HELP?}, from: 4
+108: {article? →  ● }, from: 26
+109: {article? →  ● article _}, from: 26
+110: {DESC_ITEM → preposition? ● article? descriptive}, from: 26
+111: {DESC_ITEM → preposition? ● article? variable}, from: 26
+112: {VAR → QUAL? ● VAR_ITEM}, from: 26
+113: {preposition$string$1 →  ● "i" "n"}, from: 26
+114: {preposition$string$2 →  ● "v" "a" "n"}, from: 26
+115: {ACTION → HELP? ● MOD _ VAR HELP?}, from: 26
+116: {ACTION → HELP? ● VAR _ MOD HELP?}, from: 26
+117: {HELP →  ● HELP$ebnf$1 hulpwerkwoord HELP$ebnf$2}, from: 26
+118: {HELP →  ● HELP HELP}, from: 26
+119: {ACTION? → HELP? ● VAR ACTION?$ebnf$1 MOD? HELP?}, from: 26
+120: {ACTION? → HELP? ● MOD? ACTION?$ebnf$2 VAR HELP?}, from: 26
+121: {ACTION? → HELP? VAR ACTION?$ebnf$1 MOD? HELP? ● }, from: 15
+122: {ACTION? → HELP? VAR ACTION?$ebnf$1 MOD? HELP? ● }, from: 4
+123: {QUAL → preposition? article? ● qualifier}, from: 26
+124: {VAR_ITEM → preposition? article? ● variable}, from: 26
+125: {PROP → article? ● property}, from: 26
+126: {article →  ● article$string$1}, from: 26
+127: {article →  ● article$string$2}, from: 26
+128: {article →  ● article$string$3}, from: 26
+129: {DESC_ITEM → preposition? article? ● descriptive}, from: 26
+130: {DESC_ITEM → preposition? article? ● variable}, from: 26
+131: {HELP$ebnf$1 →  ● _}, from: 26
+132: {HELP$ebnf$1 →  ● }, from: 26
+133: {ACTION? → HELP? MOD? ● ACTION?$ebnf$2 VAR HELP?}, from: 26
+134: {ACTION? → ACTION? ● _ QUAL}, from: 15
+135: {ACTION? → ACTION? ● _ and _ ACTION?}, from: 15
+136: {ACTION → ACTION? ● _ and _ ACTION}, from: 15
+137: {ACTION → ACTION? ● _ and _ ACTION}, from: 4
+138: {ACTION? → ACTION? ● _ QUAL}, from: 4
+139: {ACTION? → ACTION? ● _ and _ ACTION?}, from: 4
+140: {HYPOTHESIS → QUAL? if? ACTION? ● THEN ACTION?}, from: 0
+141: {HYPOTHESIS → QUAL? if? ACTION? ● THEN? ACTION}, from: 0
+142: {qualifier →  ● qualifier$string$1}, from: 26
+143: {qualifier →  ● qualifier$string$2}, from: 26
+144: {variable →  ● variable$string$1}, from: 26
+145: {variable →  ● variable$string$2}, from: 26
+146: {variable →  ● variable$string$3}, from: 26
+147: {variable →  ● variable$string$4}, from: 26
+148: {variable →  ● variable$string$5}, from: 26
+149: {variable →  ● variable$string$6}, from: 26
+150: {article$string$1 →  ● "d" "e"}, from: 26
+151: {article$string$2 →  ● "h" "e" "t"}, from: 26
+152: {article$string$3 →  ● "e" "e" "n"}, from: 26
+153: {descriptive →  ● descriptive$string$1}, from: 26
+154: {_ →  ● " "}, from: 26
+155: {HELP → HELP$ebnf$1 ● hulpwerkwoord HELP$ebnf$2}, from: 26
+156: {ACTION?$ebnf$2 →  ● _}, from: 26
+157: {ACTION?$ebnf$2 →  ● }, from: 26
+158: {THEN →  ● then _}, from: 26
+159: {THEN? →  ● THEN?$ebnf$1 then _}, from: 26
+160: {THEN? →  ● _}, from: 26
+161: {THEN? →  ● }, from: 26
+162: {qualifier$string$1 →  ● "b" "o" "v" "e" "n"}, from: 26
+163: {qualifier$string$2 →  ● "o" "n" "d" "e" "r"}, from: 26
+164: {variable$string$1 →  ● "w" "a" "r" "m" "e" " " "l" "u" "c" "h" "t"}, from: 26
+165: {variable$string$2 →  ● "k" "o" "u" "d" "e" " " "l" "u" "c" "h" "t"}, from: 26
+166: {variable$string$3 →  ● "k" "a" "m" "e" "r"}, from: 26
+167: {variable$string$4 →  ● "g" "a" "t"}, from: 26
+168: {variable$string$5 →  ● "m" "u" "u" "r"}, from: 26
+169: {variable$string$6 →  ● "p" "l" "a" "f" "o" "n" "d"}, from: 26
+170: {descriptive$string$1 →  ● "g" "e" "l" "i" "j" "k"}, from: 26
+171: {ACTION? → HELP? MOD? ACTION?$ebnf$2 ● VAR HELP?}, from: 26
+172: {THEN?$ebnf$1 →  ● _}, from: 26
+173: {THEN?$ebnf$1 →  ● }, from: 26
+174: {HYPOTHESIS → QUAL? if? ACTION? THEN? ● ACTION}, from: 0
+175: {THEN? → THEN?$ebnf$1 ● then _}, from: 26
+
+Chart: 27
+0: {hulpwerkwoord$string$5 → "z" ● "i" "t"}, from: 26
+
+Chart: 28
+0: {hulpwerkwoord$string$5 → "z" "i" ● "t"}, from: 26
+
+Chart: 29
+0: {hulpwerkwoord$string$5 → "z" "i" "t" ● }, from: 26
+1: {hulpwerkwoord → hulpwerkwoord$string$5 ● }, from: 26
+2: {HELP → HELP$ebnf$1 hulpwerkwoord ● HELP$ebnf$2}, from: 26
+3: {HELP → HELP$ebnf$1 hulpwerkwoord ● HELP$ebnf$2}, from: 25
+4: {HELP$ebnf$2 →  ● _}, from: 29
+5: {HELP$ebnf$2 →  ● }, from: 29
+6: {_ →  ● " "}, from: 29
+7: {HELP → HELP$ebnf$1 hulpwerkwoord HELP$ebnf$2 ● }, from: 25
+8: {HELP → HELP$ebnf$1 hulpwerkwoord HELP$ebnf$2 ● }, from: 26
+9: {HELP → HELP ● HELP}, from: 25
+10: {HELP? → HELP ● }, from: 25
+11: {HELP → HELP ● HELP}, from: 26
+12: {HELP? → HELP ● }, from: 26
+13: {HELP →  ● HELP$ebnf$1 hulpwerkwoord HELP$ebnf$2}, from: 29
+14: {HELP →  ● HELP HELP}, from: 29
+15: {ACTION? → HELP? ● MOD? ACTION?$ebnf$2 VAR HELP?}, from: 25
+16: {ACTION? → HELP? ● VAR ACTION?$ebnf$1 MOD? HELP?}, from: 25
+17: {ACTION → HELP? ● MOD _ VAR HELP?}, from: 25
+18: {ACTION → HELP? ● VAR _ MOD HELP?}, from: 25
+19: {ACTION? → HELP? VAR ACTION?$ebnf$1 MOD? HELP? ● }, from: 15
+20: {ACTION? → HELP? VAR ACTION?$ebnf$1 MOD? HELP? ● }, from: 4
+21: {ACTION? → HELP? MOD? ACTION?$ebnf$2 VAR HELP? ● }, from: 4
+22: {ACTION? → HELP? MOD? ACTION?$ebnf$2 VAR HELP? ● }, from: 4
+23: {ACTION? → HELP? MOD? ACTION?$ebnf$2 VAR HELP? ● }, from: 14
+24: {ACTION? → HELP? MOD? ACTION?$ebnf$2 VAR HELP? ● }, from: 15
+25: {ACTION? → HELP? VAR ACTION?$ebnf$1 MOD? HELP? ● }, from: 4
+26: {ACTION? → HELP? VAR ACTION?$ebnf$1 MOD? HELP? ● }, from: 15
+27: {ACTION? → HELP? ● MOD? ACTION?$ebnf$2 VAR HELP?}, from: 26
+28: {ACTION? → HELP? ● VAR ACTION?$ebnf$1 MOD? HELP?}, from: 26
+29: {ACTION → HELP? ● MOD _ VAR HELP?}, from: 26
+30: {ACTION → HELP? ● VAR _ MOD HELP?}, from: 26
+31: {HELP$ebnf$1 →  ● _}, from: 29
+32: {HELP$ebnf$1 →  ● }, from: 29
+33: {MOD? →  ● }, from: 29
+34: {MOD? →  ● MOD}, from: 29
+35: {VAR →  ● QUAL? VAR_ITEM}, from: 29
+36: {VAR →  ● VAR_ITEM _ QUAL}, from: 29
+37: {MOD →  ● modifier}, from: 29
+38: {ACTION? → ACTION? ● _ QUAL}, from: 15
+39: {ACTION? → ACTION? ● _ and _ ACTION?}, from: 15
+40: {ACTION → ACTION? ● _ and _ ACTION}, from: 15
+41: {ACTION → ACTION? ● _ and _ ACTION}, from: 4
+42: {ACTION? → ACTION? ● _ QUAL}, from: 4
+43: {ACTION? → ACTION? ● _ and _ ACTION?}, from: 4
+44: {HYPOTHESIS → QUAL? if? ACTION? ● THEN ACTION?}, from: 0
+45: {HYPOTHESIS → QUAL? if? ACTION? ● THEN? ACTION}, from: 0
+46: {ACTION → ACTION? ● _ and _ ACTION}, from: 4
+47: {ACTION? → ACTION? ● _ QUAL}, from: 4
+48: {ACTION? → ACTION? ● _ and _ ACTION?}, from: 4
+49: {HYPOTHESIS → QUAL? if? ACTION? ● THEN ACTION?}, from: 0
+50: {HYPOTHESIS → QUAL? if? ACTION? ● THEN? ACTION}, from: 0
+51: {ACTION → ACTION? ● _ and _ ACTION}, from: 4
+52: {ACTION? → ACTION? ● _ QUAL}, from: 4
+53: {ACTION? → ACTION? ● _ and _ ACTION?}, from: 4
+54: {HYPOTHESIS → QUAL? if? ACTION? ● THEN ACTION?}, from: 0
+55: {HYPOTHESIS → QUAL? if? ACTION? ● THEN? ACTION}, from: 0
+56: {ACTION? → ACTION? ● _ QUAL}, from: 14
+57: {ACTION? → ACTION? ● _ and _ ACTION?}, from: 14
+58: {ACTION → ACTION? ● _ and _ ACTION}, from: 14
+59: {ACTION? → ACTION? ● _ QUAL}, from: 15
+60: {ACTION? → ACTION? ● _ and _ ACTION?}, from: 15
+61: {ACTION → ACTION? ● _ and _ ACTION}, from: 15
+62: {ACTION → ACTION? ● _ and _ ACTION}, from: 4
+63: {ACTION? → ACTION? ● _ QUAL}, from: 4
+64: {ACTION? → ACTION? ● _ and _ ACTION?}, from: 4
+65: {HYPOTHESIS → QUAL? if? ACTION? ● THEN ACTION?}, from: 0
+66: {HYPOTHESIS → QUAL? if? ACTION? ● THEN? ACTION}, from: 0
+67: {ACTION? → ACTION? ● _ QUAL}, from: 15
+68: {ACTION? → ACTION? ● _ and _ ACTION?}, from: 15
+69: {ACTION → ACTION? ● _ and _ ACTION}, from: 15
+70: {HELP → HELP$ebnf$1 ● hulpwerkwoord HELP$ebnf$2}, from: 29
+71: {ACTION? → HELP? MOD? ● ACTION?$ebnf$2 VAR HELP?}, from: 26
+72: {ACTION? → HELP? MOD? ● ACTION?$ebnf$2 VAR HELP?}, from: 25
+73: {QUAL? →  ● }, from: 29
+74: {QUAL? →  ● QUAL QUAL?$ebnf$1}, from: 29
+75: {VAR_ITEM →  ● preposition? article? variable}, from: 29
+76: {VAR_ITEM →  ● PROP _ VAR_ITEM}, from: 29
+77: {VAR_ITEM →  ● DESC _ VAR_ITEM}, from: 29
+78: {VAR_ITEM →  ● QUAL _ VAR_ITEM}, from: 29
+79: {modifier →  ● modifier$string$1}, from: 29
+80: {modifier →  ● modifier$string$2}, from: 29
+81: {modifier →  ● modifier$string$3}, from: 29
+82: {modifier →  ● modifier$string$4}, from: 29
+83: {modifier →  ● modifier$string$5}, from: 29
+84: {modifier →  ● modifier$string$6}, from: 29
+85: {THEN →  ● then _}, from: 29
+86: {THEN? →  ● THEN?$ebnf$1 then _}, from: 29
+87: {THEN? →  ● _}, from: 29
+88: {THEN? →  ● }, from: 29
+89: {hulpwerkwoord →  ● hulpwerkwoord$string$1}, from: 29
+90: {hulpwerkwoord →  ● hulpwerkwoord$string$2}, from: 29
+91: {hulpwerkwoord →  ● hulpwerkwoord$string$3}, from: 29
+92: {hulpwerkwoord →  ● hulpwerkwoord$string$4}, from: 29
+93: {hulpwerkwoord →  ● hulpwerkwoord$string$5}, from: 29
+94: {hulpwerkwoord →  ● hulpwerkwoord$string$6}, from: 29
+95: {ACTION?$ebnf$2 →  ● _}, from: 29
+96: {ACTION?$ebnf$2 →  ● }, from: 29
+97: {VAR → QUAL? ● VAR_ITEM}, from: 29
+98: {QUAL →  ● preposition? article? qualifier}, from: 29
+99: {preposition? →  ● }, from: 29
+100: {preposition? →  ● preposition _}, from: 29
+101: {PROP →  ● property _ and _ PROP}, from: 29
+102: {PROP →  ● article? property}, from: 29
+103: {DESC →  ● DESC_ITEM _ DESC}, from: 29
+104: {DESC →  ● DESC_ITEM}, from: 29
+105: {modifier$string$1 →  ● "w" "a" "r" "m" "e" "r"}, from: 29
+106: {modifier$string$2 →  ● "m" "e" "e" "r"}, from: 29
+107: {modifier$string$3 →  ● "k" "o" "u" "d" "e" "r"}, from: 29
+108: {modifier$string$4 →  ● "m" "i" "n" "d" "e" "r"}, from: 29
+109: {modifier$string$5 →  ● "o" "n" "t" "s" "n" "a" "p" "t"}, from: 29
+110: {modifier$string$6 →  ● "g" "e" "l" "i" "j" "k"}, from: 29
+111: {then →  ● then$string$1}, from: 29
+112: {then →  ● ","}, from: 29
+113: {THEN?$ebnf$1 →  ● _}, from: 29
+114: {THEN?$ebnf$1 →  ● }, from: 29
+115: {HYPOTHESIS → QUAL? if? ACTION? THEN? ● ACTION}, from: 0
+116: {HYPOTHESIS → QUAL? if? ACTION? THEN? ● ACTION}, from: 0
+117: {HYPOTHESIS → QUAL? if? ACTION? THEN? ● ACTION}, from: 0
+118: {HYPOTHESIS → QUAL? if? ACTION? THEN? ● ACTION}, from: 0
+119: {hulpwerkwoord$string$1 →  ● "b" "l" "i" "j" "f" "t"}, from: 29
+120: {hulpwerkwoord$string$2 →  ● "g" "a" "a" "t"}, from: 29
+121: {hulpwerkwoord$string$3 →  ● "e" "r"}, from: 29
+122: {hulpwerkwoord$string$4 →  ● "i" "s"}, from: 29
+123: {hulpwerkwoord$string$5 →  ● "z" "i" "t"}, from: 29
+124: {hulpwerkwoord$string$6 →  ● "w" "o" "r" "d" "t"}, from: 29
+125: {ACTION? → HELP? MOD? ACTION?$ebnf$2 ● VAR HELP?}, from: 25
+126: {ACTION? → HELP? MOD? ACTION?$ebnf$2 ● VAR HELP?}, from: 26
+127: {QUAL → preposition? ● article? qualifier}, from: 29
+128: {VAR_ITEM → preposition? ● article? variable}, from: 29
+129: {preposition →  ● preposition$string$1}, from: 29
+130: {preposition →  ● preposition$string$2}, from: 29
+131: {article? →  ● }, from: 29
+132: {article? →  ● article _}, from: 29
+133: {DESC_ITEM →  ● preposition? article? descriptive}, from: 29
+134: {DESC_ITEM →  ● preposition? article? variable}, from: 29
+135: {then$string$1 →  ● "d" "a" "n"}, from: 29
+136: {THEN? → THEN?$ebnf$1 ● then _}, from: 29
+137: {ACTION →  ● VAR _ interactor _ VAR}, from: 29
+138: {ACTION →  ● HELP? VAR _ MOD HELP?}, from: 29
+139: {ACTION →  ● HELP? MOD _ VAR HELP?}, from: 29
+140: {ACTION →  ● ACTION _ and _ ACTION?}, from: 29
+141: {ACTION →  ● ACTION? _ and _ ACTION}, from: 29
+142: {ACTION →  ● ACTION _ QUAL}, from: 29
+143: {preposition$string$1 →  ● "i" "n"}, from: 29
+144: {preposition$string$2 →  ● "v" "a" "n"}, from: 29
+145: {VAR_ITEM → preposition? article? ● variable}, from: 29
+146: {QUAL → preposition? article? ● qualifier}, from: 29
+147: {PROP → article? ● property}, from: 29
+148: {article →  ● article$string$1}, from: 29
+149: {article →  ● article$string$2}, from: 29
+150: {article →  ● article$string$3}, from: 29
+151: {DESC_ITEM → preposition? ● article? descriptive}, from: 29
+152: {DESC_ITEM → preposition? ● article? variable}, from: 29
+153: {HELP? →  ● }, from: 29
+154: {HELP? →  ● HELP}, from: 29
+155: {ACTION? →  ● ACTION}, from: 29
+156: {ACTION? →  ● HELP? VAR ACTION?$ebnf$1 MOD? HELP?}, from: 29
+157: {ACTION? →  ● HELP? MOD? ACTION?$ebnf$2 VAR HELP?}, from: 29
+158: {ACTION? →  ● ACTION? _ and _ ACTION?}, from: 29
+159: {ACTION? →  ● ACTION? _ QUAL}, from: 29
+160: {variable →  ● variable$string$1}, from: 29
+161: {variable →  ● variable$string$2}, from: 29
+162: {variable →  ● variable$string$3}, from: 29
+163: {variable →  ● variable$string$4}, from: 29
+164: {variable →  ● variable$string$5}, from: 29
+165: {variable →  ● variable$string$6}, from: 29
+166: {qualifier →  ● qualifier$string$1}, from: 29
+167: {qualifier →  ● qualifier$string$2}, from: 29
+168: {article$string$1 →  ● "d" "e"}, from: 29
+169: {article$string$2 →  ● "h" "e" "t"}, from: 29
+170: {article$string$3 →  ● "e" "e" "n"}, from: 29
+171: {DESC_ITEM → preposition? article? ● descriptive}, from: 29
+172: {DESC_ITEM → preposition? article? ● variable}, from: 29
+173: {ACTION → HELP? ● MOD _ VAR HELP?}, from: 29
+174: {ACTION → HELP? ● VAR _ MOD HELP?}, from: 29
+175: {ACTION? → HELP? ● VAR ACTION?$ebnf$1 MOD? HELP?}, from: 29
+176: {ACTION? → HELP? ● MOD? ACTION?$ebnf$2 VAR HELP?}, from: 29
+177: {variable$string$1 →  ● "w" "a" "r" "m" "e" " " "l" "u" "c" "h" "t"}, from: 29
+178: {variable$string$2 →  ● "k" "o" "u" "d" "e" " " "l" "u" "c" "h" "t"}, from: 29
+179: {variable$string$3 →  ● "k" "a" "m" "e" "r"}, from: 29
+180: {variable$string$4 →  ● "g" "a" "t"}, from: 29
+181: {variable$string$5 →  ● "m" "u" "u" "r"}, from: 29
+182: {variable$string$6 →  ● "p" "l" "a" "f" "o" "n" "d"}, from: 29
+183: {qualifier$string$1 →  ● "b" "o" "v" "e" "n"}, from: 29
+184: {qualifier$string$2 →  ● "o" "n" "d" "e" "r"}, from: 29
+185: {descriptive →  ● descriptive$string$1}, from: 29
+186: {ACTION? → HELP? MOD? ● ACTION?$ebnf$2 VAR HELP?}, from: 29
+187: {descriptive$string$1 →  ● "g" "e" "l" "i" "j" "k"}, from: 29
+188: {ACTION? → HELP? MOD? ACTION?$ebnf$2 ● VAR HELP?}, from: 29
+
+Chart: 30
+0: {_ → " " ● }, from: 29
+1: {THEN?$ebnf$1 → _ ● }, from: 29
+2: {ACTION?$ebnf$2 → _ ● }, from: 29
+3: {THEN? → _ ● }, from: 29
+4: {ACTION → ACTION? _ ● and _ ACTION}, from: 15
+5: {ACTION? → ACTION? _ ● and _ ACTION?}, from: 15
+6: {ACTION? → ACTION? _ ● QUAL}, from: 15
+7: {ACTION? → ACTION? _ ● and _ ACTION?}, from: 4
+8: {ACTION? → ACTION? _ ● QUAL}, from: 4
+9: {ACTION → ACTION? _ ● and _ ACTION}, from: 4
+10: {ACTION → ACTION? _ ● and _ ACTION}, from: 15
+11: {ACTION? → ACTION? _ ● and _ ACTION?}, from: 15
+12: {ACTION? → ACTION? _ ● QUAL}, from: 15
+13: {ACTION → ACTION? _ ● and _ ACTION}, from: 14
+14: {ACTION? → ACTION? _ ● and _ ACTION?}, from: 14
+15: {ACTION? → ACTION? _ ● QUAL}, from: 14
+16: {ACTION? → ACTION? _ ● and _ ACTION?}, from: 4
+17: {ACTION? → ACTION? _ ● QUAL}, from: 4
+18: {ACTION → ACTION? _ ● and _ ACTION}, from: 4
+19: {ACTION? → ACTION? _ ● and _ ACTION?}, from: 4
+20: {ACTION? → ACTION? _ ● QUAL}, from: 4
+21: {ACTION → ACTION? _ ● and _ ACTION}, from: 4
+22: {ACTION? → ACTION? _ ● and _ ACTION?}, from: 4
+23: {ACTION? → ACTION? _ ● QUAL}, from: 4
+24: {ACTION → ACTION? _ ● and _ ACTION}, from: 4
+25: {ACTION → ACTION? _ ● and _ ACTION}, from: 15
+26: {ACTION? → ACTION? _ ● and _ ACTION?}, from: 15
+27: {ACTION? → ACTION? _ ● QUAL}, from: 15
+28: {HELP$ebnf$1 → _ ● }, from: 29
+29: {HELP$ebnf$2 → _ ● }, from: 29
+30: {THEN? → THEN?$ebnf$1 ● then _}, from: 29
+31: {ACTION? → HELP? MOD? ACTION?$ebnf$2 ● VAR HELP?}, from: 29
+32: {ACTION? → HELP? MOD? ACTION?$ebnf$2 ● VAR HELP?}, from: 25
+33: {ACTION? → HELP? MOD? ACTION?$ebnf$2 ● VAR HELP?}, from: 26
+34: {HYPOTHESIS → QUAL? if? ACTION? THEN? ● ACTION}, from: 0
+35: {HYPOTHESIS → QUAL? if? ACTION? THEN? ● ACTION}, from: 0
+36: {HYPOTHESIS → QUAL? if? ACTION? THEN? ● ACTION}, from: 0
+37: {HYPOTHESIS → QUAL? if? ACTION? THEN? ● ACTION}, from: 0
+38: {and →  ● and$string$1}, from: 30
+39: {QUAL →  ● preposition? article? qualifier}, from: 30
+40: {HELP → HELP$ebnf$1 ● hulpwerkwoord HELP$ebnf$2}, from: 29
+41: {HELP → HELP$ebnf$1 hulpwerkwoord HELP$ebnf$2 ● }, from: 25
+42: {HELP → HELP$ebnf$1 hulpwerkwoord HELP$ebnf$2 ● }, from: 26
+43: {then →  ● then$string$1}, from: 30
+44: {then →  ● ","}, from: 30
+45: {VAR →  ● QUAL? VAR_ITEM}, from: 30
+46: {VAR →  ● VAR_ITEM _ QUAL}, from: 30
+47: {ACTION →  ● VAR _ interactor _ VAR}, from: 30
+48: {ACTION →  ● HELP? VAR _ MOD HELP?}, from: 30
+49: {ACTION →  ● HELP? MOD _ VAR HELP?}, from: 30
+50: {ACTION →  ● ACTION _ and _ ACTION?}, from: 30
+51: {ACTION →  ● ACTION? _ and _ ACTION}, from: 30
+52: {ACTION →  ● ACTION _ QUAL}, from: 30
+53: {and$string$1 →  ● "e" "n"}, from: 30
+54: {preposition? →  ● }, from: 30
+55: {preposition? →  ● preposition _}, from: 30
+56: {hulpwerkwoord →  ● hulpwerkwoord$string$1}, from: 30
+57: {hulpwerkwoord →  ● hulpwerkwoord$string$2}, from: 30
+58: {hulpwerkwoord →  ● hulpwerkwoord$string$3}, from: 30
+59: {hulpwerkwoord →  ● hulpwerkwoord$string$4}, from: 30
+60: {hulpwerkwoord →  ● hulpwerkwoord$string$5}, from: 30
+61: {hulpwerkwoord →  ● hulpwerkwoord$string$6}, from: 30
+62: {HELP → HELP ● HELP}, from: 25
+63: {HELP? → HELP ● }, from: 25
+64: {HELP → HELP ● HELP}, from: 26
+65: {HELP? → HELP ● }, from: 26
+66: {then$string$1 →  ● "d" "a" "n"}, from: 30
+67: {QUAL? →  ● }, from: 30
+68: {QUAL? →  ● QUAL QUAL?$ebnf$1}, from: 30
+69: {VAR_ITEM →  ● preposition? article? variable}, from: 30
+70: {VAR_ITEM →  ● PROP _ VAR_ITEM}, from: 30
+71: {VAR_ITEM →  ● DESC _ VAR_ITEM}, from: 30
+72: {VAR_ITEM →  ● QUAL _ VAR_ITEM}, from: 30
+73: {HELP? →  ● }, from: 30
+74: {HELP? →  ● HELP}, from: 30
+75: {ACTION? →  ● ACTION}, from: 30
+76: {ACTION? →  ● HELP? VAR ACTION?$ebnf$1 MOD? HELP?}, from: 30
+77: {ACTION? →  ● HELP? MOD? ACTION?$ebnf$2 VAR HELP?}, from: 30
+78: {ACTION? →  ● ACTION? _ and _ ACTION?}, from: 30
+79: {ACTION? →  ● ACTION? _ QUAL}, from: 30
+80: {QUAL → preposition? ● article? qualifier}, from: 30
+81: {preposition →  ● preposition$string$1}, from: 30
+82: {preposition →  ● preposition$string$2}, from: 30
+83: {hulpwerkwoord$string$1 →  ● "b" "l" "i" "j" "f" "t"}, from: 30
+84: {hulpwerkwoord$string$2 →  ● "g" "a" "a" "t"}, from: 30
+85: {hulpwerkwoord$string$3 →  ● "e" "r"}, from: 30
+86: {hulpwerkwoord$string$4 →  ● "i" "s"}, from: 30
+87: {hulpwerkwoord$string$5 →  ● "z" "i" "t"}, from: 30
+88: {hulpwerkwoord$string$6 →  ● "w" "o" "r" "d" "t"}, from: 30
+89: {HELP →  ● HELP$ebnf$1 hulpwerkwoord HELP$ebnf$2}, from: 30
+90: {HELP →  ● HELP HELP}, from: 30
+91: {ACTION? → HELP? ● MOD? ACTION?$ebnf$2 VAR HELP?}, from: 25
+92: {ACTION? → HELP? ● VAR ACTION?$ebnf$1 MOD? HELP?}, from: 25
+93: {ACTION → HELP? ● MOD _ VAR HELP?}, from: 25
+94: {ACTION → HELP? ● VAR _ MOD HELP?}, from: 25
+95: {ACTION? → HELP? VAR ACTION?$ebnf$1 MOD? HELP? ● }, from: 15
+96: {ACTION? → HELP? VAR ACTION?$ebnf$1 MOD? HELP? ● }, from: 4
+97: {ACTION? → HELP? MOD? ACTION?$ebnf$2 VAR HELP? ● }, from: 4
+98: {ACTION? → HELP? MOD? ACTION?$ebnf$2 VAR HELP? ● }, from: 4
+99: {ACTION? → HELP? MOD? ACTION?$ebnf$2 VAR HELP? ● }, from: 14
+100: {ACTION? → HELP? MOD? ACTION?$ebnf$2 VAR HELP? ● }, from: 15
+101: {ACTION? → HELP? VAR ACTION?$ebnf$1 MOD? HELP? ● }, from: 4
+102: {ACTION? → HELP? VAR ACTION?$ebnf$1 MOD? HELP? ● }, from: 15
+103: {ACTION? → HELP? ● MOD? ACTION?$ebnf$2 VAR HELP?}, from: 26
+104: {ACTION? → HELP? ● VAR ACTION?$ebnf$1 MOD? HELP?}, from: 26
+105: {ACTION → HELP? ● MOD _ VAR HELP?}, from: 26
+106: {ACTION → HELP? ● VAR _ MOD HELP?}, from: 26
+107: {VAR → QUAL? ● VAR_ITEM}, from: 30
+108: {VAR_ITEM → preposition? ● article? variable}, from: 30
+109: {PROP →  ● property _ and _ PROP}, from: 30
+110: {PROP →  ● article? property}, from: 30
+111: {DESC →  ● DESC_ITEM _ DESC}, from: 30
+112: {DESC →  ● DESC_ITEM}, from: 30
+113: {ACTION → HELP? ● MOD _ VAR HELP?}, from: 30
+114: {ACTION → HELP? ● VAR _ MOD HELP?}, from: 30
+115: {ACTION? → HELP? ● VAR ACTION?$ebnf$1 MOD? HELP?}, from: 30
+116: {ACTION? → HELP? ● MOD? ACTION?$ebnf$2 VAR HELP?}, from: 30
+117: {article? →  ● }, from: 30
+118: {article? →  ● article _}, from: 30
+119: {preposition$string$1 →  ● "i" "n"}, from: 30
+120: {preposition$string$2 →  ● "v" "a" "n"}, from: 30
+121: {HELP$ebnf$1 →  ● _}, from: 30
+122: {HELP$ebnf$1 →  ● }, from: 30
+123: {MOD? →  ● }, from: 30
+124: {MOD? →  ● MOD}, from: 30
+125: {MOD →  ● modifier}, from: 30
+126: {ACTION? → ACTION? ● _ QUAL}, from: 15
+127: {ACTION? → ACTION? ● _ and _ ACTION?}, from: 15
+128: {ACTION → ACTION? ● _ and _ ACTION}, from: 15
+129: {ACTION → ACTION? ● _ and _ ACTION}, from: 4
+130: {ACTION? → ACTION? ● _ QUAL}, from: 4
+131: {ACTION? → ACTION? ● _ and _ ACTION?}, from: 4
+132: {HYPOTHESIS → QUAL? if? ACTION? ● THEN ACTION?}, from: 0
+133: {HYPOTHESIS → QUAL? if? ACTION? ● THEN? ACTION}, from: 0
+134: {ACTION → ACTION? ● _ and _ ACTION}, from: 4
+135: {ACTION? → ACTION? ● _ QUAL}, from: 4
+136: {ACTION? → ACTION? ● _ and _ ACTION?}, from: 4
+137: {HYPOTHESIS → QUAL? if? ACTION? ● THEN ACTION?}, from: 0
+138: {HYPOTHESIS → QUAL? if? ACTION? ● THEN? ACTION}, from: 0
+139: {ACTION → ACTION? ● _ and _ ACTION}, from: 4
+140: {ACTION? → ACTION? ● _ QUAL}, from: 4
+141: {ACTION? → ACTION? ● _ and _ ACTION?}, from: 4
+142: {HYPOTHESIS → QUAL? if? ACTION? ● THEN ACTION?}, from: 0
+143: {HYPOTHESIS → QUAL? if? ACTION? ● THEN? ACTION}, from: 0
+144: {ACTION? → ACTION? ● _ QUAL}, from: 14
+145: {ACTION? → ACTION? ● _ and _ ACTION?}, from: 14
+146: {ACTION → ACTION? ● _ and _ ACTION}, from: 14
+147: {ACTION? → ACTION? ● _ QUAL}, from: 15
+148: {ACTION? → ACTION? ● _ and _ ACTION?}, from: 15
+149: {ACTION → ACTION? ● _ and _ ACTION}, from: 15
+150: {ACTION → ACTION? ● _ and _ ACTION}, from: 4
+151: {ACTION? → ACTION? ● _ QUAL}, from: 4
+152: {ACTION? → ACTION? ● _ and _ ACTION?}, from: 4
+153: {HYPOTHESIS → QUAL? if? ACTION? ● THEN ACTION?}, from: 0
+154: {HYPOTHESIS → QUAL? if? ACTION? ● THEN? ACTION}, from: 0
+155: {ACTION? → ACTION? ● _ QUAL}, from: 15
+156: {ACTION? → ACTION? ● _ and _ ACTION?}, from: 15
+157: {ACTION → ACTION? ● _ and _ ACTION}, from: 15
+158: {DESC_ITEM →  ● preposition? article? descriptive}, from: 30
+159: {DESC_ITEM →  ● preposition? article? variable}, from: 30
+160: {PROP → article? ● property}, from: 30
+161: {VAR_ITEM → preposition? article? ● variable}, from: 30
+162: {QUAL → preposition? article? ● qualifier}, from: 30
+163: {article →  ● article$string$1}, from: 30
+164: {article →  ● article$string$2}, from: 30
+165: {article →  ● article$string$3}, from: 30
+166: {_ →  ● " "}, from: 30
+167: {HELP → HELP$ebnf$1 ● hulpwerkwoord HELP$ebnf$2}, from: 30
+168: {ACTION? → HELP? MOD? ● ACTION?$ebnf$2 VAR HELP?}, from: 30
+169: {ACTION? → HELP? MOD? ● ACTION?$ebnf$2 VAR HELP?}, from: 26
+170: {ACTION? → HELP? MOD? ● ACTION?$ebnf$2 VAR HELP?}, from: 25
+171: {modifier →  ● modifier$string$1}, from: 30
+172: {modifier →  ● modifier$string$2}, from: 30
+173: {modifier →  ● modifier$string$3}, from: 30
+174: {modifier →  ● modifier$string$4}, from: 30
+175: {modifier →  ● modifier$string$5}, from: 30
+176: {modifier →  ● modifier$string$6}, from: 30
+177: {THEN →  ● then _}, from: 30
+178: {THEN? →  ● THEN?$ebnf$1 then _}, from: 30
+179: {THEN? →  ● _}, from: 30
+180: {THEN? →  ● }, from: 30
+181: {DESC_ITEM → preposition? ● article? descriptive}, from: 30
+182: {DESC_ITEM → preposition? ● article? variable}, from: 30
+183: {variable →  ● variable$string$1}, from: 30
+184: {variable →  ● variable$string$2}, from: 30
+185: {variable →  ● variable$string$3}, from: 30
+186: {variable →  ● variable$string$4}, from: 30
+187: {variable →  ● variable$string$5}, from: 30
+188: {variable →  ● variable$string$6}, from: 30
+189: {qualifier →  ● qualifier$string$1}, from: 30
+190: {qualifier →  ● qualifier$string$2}, from: 30
+191: {article$string$1 →  ● "d" "e"}, from: 30
+192: {article$string$2 →  ● "h" "e" "t"}, from: 30
+193: {article$string$3 →  ● "e" "e" "n"}, from: 30
+194: {ACTION?$ebnf$2 →  ● _}, from: 30
+195: {ACTION?$ebnf$2 →  ● }, from: 30
+196: {modifier$string$1 →  ● "w" "a" "r" "m" "e" "r"}, from: 30
+197: {modifier$string$2 →  ● "m" "e" "e" "r"}, from: 30
+198: {modifier$string$3 →  ● "k" "o" "u" "d" "e" "r"}, from: 30
+199: {modifier$string$4 →  ● "m" "i" "n" "d" "e" "r"}, from: 30
+200: {modifier$string$5 →  ● "o" "n" "t" "s" "n" "a" "p" "t"}, from: 30
+201: {modifier$string$6 →  ● "g" "e" "l" "i" "j" "k"}, from: 30
+202: {THEN?$ebnf$1 →  ● _}, from: 30
+203: {THEN?$ebnf$1 →  ● }, from: 30
+204: {HYPOTHESIS → QUAL? if? ACTION? THEN? ● ACTION}, from: 0
+205: {HYPOTHESIS → QUAL? if? ACTION? THEN? ● ACTION}, from: 0
+206: {HYPOTHESIS → QUAL? if? ACTION? THEN? ● ACTION}, from: 0
+207: {HYPOTHESIS → QUAL? if? ACTION? THEN? ● ACTION}, from: 0
+208: {DESC_ITEM → preposition? article? ● descriptive}, from: 30
+209: {DESC_ITEM → preposition? article? ● variable}, from: 30
+210: {variable$string$1 →  ● "w" "a" "r" "m" "e" " " "l" "u" "c" "h" "t"}, from: 30
+211: {variable$string$2 →  ● "k" "o" "u" "d" "e" " " "l" "u" "c" "h" "t"}, from: 30
+212: {variable$string$3 →  ● "k" "a" "m" "e" "r"}, from: 30
+213: {variable$string$4 →  ● "g" "a" "t"}, from: 30
+214: {variable$string$5 →  ● "m" "u" "u" "r"}, from: 30
+215: {variable$string$6 →  ● "p" "l" "a" "f" "o" "n" "d"}, from: 30
+216: {qualifier$string$1 →  ● "b" "o" "v" "e" "n"}, from: 30
+217: {qualifier$string$2 →  ● "o" "n" "d" "e" "r"}, from: 30
+218: {ACTION? → HELP? MOD? ACTION?$ebnf$2 ● VAR HELP?}, from: 25
+219: {ACTION? → HELP? MOD? ACTION?$ebnf$2 ● VAR HELP?}, from: 26
+220: {ACTION? → HELP? MOD? ACTION?$ebnf$2 ● VAR HELP?}, from: 30
+221: {THEN? → THEN?$ebnf$1 ● then _}, from: 30
+222: {descriptive →  ● descriptive$string$1}, from: 30
+223: {descriptive$string$1 →  ● "g" "e" "l" "i" "j" "k"}, from: 30
+
+Chart: 31
+0: {qualifier$string$2 → "o" ● "n" "d" "e" "r"}, from: 30
+1: {modifier$string$5 → "o" ● "n" "t" "s" "n" "a" "p" "t"}, from: 30
+
+Chart: 32
+0: {modifier$string$5 → "o" "n" ● "t" "s" "n" "a" "p" "t"}, from: 30
+1: {qualifier$string$2 → "o" "n" ● "d" "e" "r"}, from: 30
+
+Chart: 33
+0: {modifier$string$5 → "o" "n" "t" ● "s" "n" "a" "p" "t"}, from: 30
+
+Chart: 34
+0: {modifier$string$5 → "o" "n" "t" "s" ● "n" "a" "p" "t"}, from: 30
+
+Chart: 35
+0: {modifier$string$5 → "o" "n" "t" "s" "n" ● "a" "p" "t"}, from: 30
+
+Chart: 36
+0: {modifier$string$5 → "o" "n" "t" "s" "n" "a" ● "p" "t"}, from: 30
+
+Chart: 37
+0: {modifier$string$5 → "o" "n" "t" "s" "n" "a" "p" ● "t"}, from: 30
+
+Chart: 38
+0: {modifier$string$5 → "o" "n" "t" "s" "n" "a" "p" "t" ● }, from: 30
+1: {modifier → modifier$string$5 ● }, from: 30
+2: {MOD → modifier ● }, from: 30
+3: {MOD? → MOD ● }, from: 30
+4: {ACTION → HELP? MOD ● _ VAR HELP?}, from: 30
+5: {ACTION → HELP? MOD ● _ VAR HELP?}, from: 26
+6: {ACTION → HELP? MOD ● _ VAR HELP?}, from: 25
+7: {ACTION? → HELP? MOD? ● ACTION?$ebnf$2 VAR HELP?}, from: 30
+8: {ACTION? → HELP? MOD? ● ACTION?$ebnf$2 VAR HELP?}, from: 26
+9: {ACTION? → HELP? MOD? ● ACTION?$ebnf$2 VAR HELP?}, from: 25
+10: {_ →  ● " "}, from: 38
+11: {ACTION?$ebnf$2 →  ● _}, from: 38
+12: {ACTION?$ebnf$2 →  ● }, from: 38
+13: {ACTION? → HELP? MOD? ACTION?$ebnf$2 ● VAR HELP?}, from: 25
+14: {ACTION? → HELP? MOD? ACTION?$ebnf$2 ● VAR HELP?}, from: 26
+15: {ACTION? → HELP? MOD? ACTION?$ebnf$2 ● VAR HELP?}, from: 30
+16: {VAR →  ● QUAL? VAR_ITEM}, from: 38
+17: {VAR →  ● VAR_ITEM _ QUAL}, from: 38
+18: {QUAL? →  ● }, from: 38
+19: {QUAL? →  ● QUAL QUAL?$ebnf$1}, from: 38
+20: {VAR_ITEM →  ● preposition? article? variable}, from: 38
+21: {VAR_ITEM →  ● PROP _ VAR_ITEM}, from: 38
+22: {VAR_ITEM →  ● DESC _ VAR_ITEM}, from: 38
+23: {VAR_ITEM →  ● QUAL _ VAR_ITEM}, from: 38
+24: {VAR → QUAL? ● VAR_ITEM}, from: 38
+25: {QUAL →  ● preposition? article? qualifier}, from: 38
+26: {preposition? →  ● }, from: 38
+27: {preposition? →  ● preposition _}, from: 38
+28: {PROP →  ● property _ and _ PROP}, from: 38
+29: {PROP →  ● article? property}, from: 38
+30: {DESC →  ● DESC_ITEM _ DESC}, from: 38
+31: {DESC →  ● DESC_ITEM}, from: 38
+32: {QUAL → preposition? ● article? qualifier}, from: 38
+33: {VAR_ITEM → preposition? ● article? variable}, from: 38
+34: {preposition →  ● preposition$string$1}, from: 38
+35: {preposition →  ● preposition$string$2}, from: 38
+36: {article? →  ● }, from: 38
+37: {article? →  ● article _}, from: 38
+38: {DESC_ITEM →  ● preposition? article? descriptive}, from: 38
+39: {DESC_ITEM →  ● preposition? article? variable}, from: 38
+40: {preposition$string$1 →  ● "i" "n"}, from: 38
+41: {preposition$string$2 →  ● "v" "a" "n"}, from: 38
+42: {VAR_ITEM → preposition? article? ● variable}, from: 38
+43: {QUAL → preposition? article? ● qualifier}, from: 38
+44: {PROP → article? ● property}, from: 38
+45: {article →  ● article$string$1}, from: 38
+46: {article →  ● article$string$2}, from: 38
+47: {article →  ● article$string$3}, from: 38
+48: {DESC_ITEM → preposition? ● article? descriptive}, from: 38
+49: {DESC_ITEM → preposition? ● article? variable}, from: 38
+50: {variable →  ● variable$string$1}, from: 38
+51: {variable →  ● variable$string$2}, from: 38
+52: {variable →  ● variable$string$3}, from: 38
+53: {variable →  ● variable$string$4}, from: 38
+54: {variable →  ● variable$string$5}, from: 38
+55: {variable →  ● variable$string$6}, from: 38
+56: {qualifier →  ● qualifier$string$1}, from: 38
+57: {qualifier →  ● qualifier$string$2}, from: 38
+58: {article$string$1 →  ● "d" "e"}, from: 38
+59: {article$string$2 →  ● "h" "e" "t"}, from: 38
+60: {article$string$3 →  ● "e" "e" "n"}, from: 38
+61: {DESC_ITEM → preposition? article? ● descriptive}, from: 38
+62: {DESC_ITEM → preposition? article? ● variable}, from: 38
+63: {variable$string$1 →  ● "w" "a" "r" "m" "e" " " "l" "u" "c" "h" "t"}, from: 38
+64: {variable$string$2 →  ● "k" "o" "u" "d" "e" " " "l" "u" "c" "h" "t"}, from: 38
+65: {variable$string$3 →  ● "k" "a" "m" "e" "r"}, from: 38
+66: {variable$string$4 →  ● "g" "a" "t"}, from: 38
+67: {variable$string$5 →  ● "m" "u" "u" "r"}, from: 38
+68: {variable$string$6 →  ● "p" "l" "a" "f" "o" "n" "d"}, from: 38
+69: {qualifier$string$1 →  ● "b" "o" "v" "e" "n"}, from: 38
+70: {qualifier$string$2 →  ● "o" "n" "d" "e" "r"}, from: 38
+71: {descriptive →  ● descriptive$string$1}, from: 38
+72: {descriptive$string$1 →  ● "g" "e" "l" "i" "j" "k"}, from: 38
+
+Chart: 39
+0: {_ → " " ● }, from: 38
+1: {ACTION?$ebnf$2 → _ ● }, from: 38
+2: {ACTION → HELP? MOD _ ● VAR HELP?}, from: 25
+3: {ACTION → HELP? MOD _ ● VAR HELP?}, from: 26
+4: {ACTION → HELP? MOD _ ● VAR HELP?}, from: 30
+5: {ACTION? → HELP? MOD? ACTION?$ebnf$2 ● VAR HELP?}, from: 25
+6: {ACTION? → HELP? MOD? ACTION?$ebnf$2 ● VAR HELP?}, from: 26
+7: {ACTION? → HELP? MOD? ACTION?$ebnf$2 ● VAR HELP?}, from: 30
+8: {VAR →  ● QUAL? VAR_ITEM}, from: 39
+9: {VAR →  ● VAR_ITEM _ QUAL}, from: 39
+10: {QUAL? →  ● }, from: 39
+11: {QUAL? →  ● QUAL QUAL?$ebnf$1}, from: 39
+12: {VAR_ITEM →  ● preposition? article? variable}, from: 39
+13: {VAR_ITEM →  ● PROP _ VAR_ITEM}, from: 39
+14: {VAR_ITEM →  ● DESC _ VAR_ITEM}, from: 39
+15: {VAR_ITEM →  ● QUAL _ VAR_ITEM}, from: 39
+16: {VAR → QUAL? ● VAR_ITEM}, from: 39
+17: {QUAL →  ● preposition? article? qualifier}, from: 39
+18: {preposition? →  ● }, from: 39
+19: {preposition? →  ● preposition _}, from: 39
+20: {PROP →  ● property _ and _ PROP}, from: 39
+21: {PROP →  ● article? property}, from: 39
+22: {DESC →  ● DESC_ITEM _ DESC}, from: 39
+23: {DESC →  ● DESC_ITEM}, from: 39
+24: {QUAL → preposition? ● article? qualifier}, from: 39
+25: {VAR_ITEM → preposition? ● article? variable}, from: 39
+26: {preposition →  ● preposition$string$1}, from: 39
+27: {preposition →  ● preposition$string$2}, from: 39
+28: {article? →  ● }, from: 39
+29: {article? →  ● article _}, from: 39
+30: {DESC_ITEM →  ● preposition? article? descriptive}, from: 39
+31: {DESC_ITEM →  ● preposition? article? variable}, from: 39
+32: {preposition$string$1 →  ● "i" "n"}, from: 39
+33: {preposition$string$2 →  ● "v" "a" "n"}, from: 39
+34: {VAR_ITEM → preposition? article? ● variable}, from: 39
+35: {QUAL → preposition? article? ● qualifier}, from: 39
+36: {PROP → article? ● property}, from: 39
+37: {article →  ● article$string$1}, from: 39
+38: {article →  ● article$string$2}, from: 39
+39: {article →  ● article$string$3}, from: 39
+40: {DESC_ITEM → preposition? ● article? descriptive}, from: 39
+41: {DESC_ITEM → preposition? ● article? variable}, from: 39
+42: {variable →  ● variable$string$1}, from: 39
+43: {variable →  ● variable$string$2}, from: 39
+44: {variable →  ● variable$string$3}, from: 39
+45: {variable →  ● variable$string$4}, from: 39
+46: {variable →  ● variable$string$5}, from: 39
+47: {variable →  ● variable$string$6}, from: 39
+48: {qualifier →  ● qualifier$string$1}, from: 39
+49: {qualifier →  ● qualifier$string$2}, from: 39
+50: {article$string$1 →  ● "d" "e"}, from: 39
+51: {article$string$2 →  ● "h" "e" "t"}, from: 39
+52: {article$string$3 →  ● "e" "e" "n"}, from: 39
+53: {DESC_ITEM → preposition? article? ● descriptive}, from: 39
+54: {DESC_ITEM → preposition? article? ● variable}, from: 39
+55: {variable$string$1 →  ● "w" "a" "r" "m" "e" " " "l" "u" "c" "h" "t"}, from: 39
+56: {variable$string$2 →  ● "k" "o" "u" "d" "e" " " "l" "u" "c" "h" "t"}, from: 39
+57: {variable$string$3 →  ● "k" "a" "m" "e" "r"}, from: 39
+58: {variable$string$4 →  ● "g" "a" "t"}, from: 39
+59: {variable$string$5 →  ● "m" "u" "u" "r"}, from: 39
+60: {variable$string$6 →  ● "p" "l" "a" "f" "o" "n" "d"}, from: 39
+61: {qualifier$string$1 →  ● "b" "o" "v" "e" "n"}, from: 39
+62: {qualifier$string$2 →  ● "o" "n" "d" "e" "r"}, from: 39
+63: {descriptive →  ● descriptive$string$1}, from: 39
+64: {descriptive$string$1 →  ● "g" "e" "l" "i" "j" "k"}, from: 39
+
+Chart: 40
+0: {descriptive$string$1 → "g" ● "e" "l" "i" "j" "k"}, from: 39
+1: {variable$string$4 → "g" ● "a" "t"}, from: 39
+
+Chart: 41
+0: {descriptive$string$1 → "g" "e" ● "l" "i" "j" "k"}, from: 39
+
+Chart: 42
+0: {descriptive$string$1 → "g" "e" "l" ● "i" "j" "k"}, from: 39
+
+Chart: 43
+0: {descriptive$string$1 → "g" "e" "l" "i" ● "j" "k"}, from: 39
+
+Chart: 44
+0: {descriptive$string$1 → "g" "e" "l" "i" "j" ● "k"}, from: 39
+
+Chart: 45
+0: {descriptive$string$1 → "g" "e" "l" "i" "j" "k" ● }, from: 39
+1: {descriptive → descriptive$string$1 ● }, from: 39
+2: {DESC_ITEM → preposition? article? descriptive ● }, from: 39
+3: {DESC → DESC_ITEM ● }, from: 39
+4: {DESC → DESC_ITEM ● _ DESC}, from: 39
+5: {VAR_ITEM → DESC ● _ VAR_ITEM}, from: 39
+6: {_ →  ● " "}, from: 45
+
+Chart: 46
+0: {_ → " " ● }, from: 45
+1: {VAR_ITEM → DESC _ ● VAR_ITEM}, from: 39
+2: {DESC → DESC_ITEM _ ● DESC}, from: 39
+3: {VAR_ITEM →  ● preposition? article? variable}, from: 46
+4: {VAR_ITEM →  ● PROP _ VAR_ITEM}, from: 46
+5: {VAR_ITEM →  ● DESC _ VAR_ITEM}, from: 46
+6: {VAR_ITEM →  ● QUAL _ VAR_ITEM}, from: 46
+7: {DESC →  ● DESC_ITEM _ DESC}, from: 46
+8: {DESC →  ● DESC_ITEM}, from: 46
+9: {preposition? →  ● }, from: 46
+10: {preposition? →  ● preposition _}, from: 46
+11: {PROP →  ● property _ and _ PROP}, from: 46
+12: {PROP →  ● article? property}, from: 46
+13: {QUAL →  ● preposition? article? qualifier}, from: 46
+14: {DESC_ITEM →  ● preposition? article? descriptive}, from: 46
+15: {DESC_ITEM →  ● preposition? article? variable}, from: 46
+16: {VAR_ITEM → preposition? ● article? variable}, from: 46
+17: {preposition →  ● preposition$string$1}, from: 46
+18: {preposition →  ● preposition$string$2}, from: 46
+19: {article? →  ● }, from: 46
+20: {article? →  ● article _}, from: 46
+21: {QUAL → preposition? ● article? qualifier}, from: 46
+22: {DESC_ITEM → preposition? ● article? descriptive}, from: 46
+23: {DESC_ITEM → preposition? ● article? variable}, from: 46
+24: {preposition$string$1 →  ● "i" "n"}, from: 46
+25: {preposition$string$2 →  ● "v" "a" "n"}, from: 46
+26: {VAR_ITEM → preposition? article? ● variable}, from: 46
+27: {PROP → article? ● property}, from: 46
+28: {article →  ● article$string$1}, from: 46
+29: {article →  ● article$string$2}, from: 46
+30: {article →  ● article$string$3}, from: 46
+31: {QUAL → preposition? article? ● qualifier}, from: 46
+32: {DESC_ITEM → preposition? article? ● descriptive}, from: 46
+33: {DESC_ITEM → preposition? article? ● variable}, from: 46
+34: {variable →  ● variable$string$1}, from: 46
+35: {variable →  ● variable$string$2}, from: 46
+36: {variable →  ● variable$string$3}, from: 46
+37: {variable →  ● variable$string$4}, from: 46
+38: {variable →  ● variable$string$5}, from: 46
+39: {variable →  ● variable$string$6}, from: 46
+40: {article$string$1 →  ● "d" "e"}, from: 46
+41: {article$string$2 →  ● "h" "e" "t"}, from: 46
+42: {article$string$3 →  ● "e" "e" "n"}, from: 46
+43: {qualifier →  ● qualifier$string$1}, from: 46
+44: {qualifier →  ● qualifier$string$2}, from: 46
+45: {descriptive →  ● descriptive$string$1}, from: 46
+46: {variable$string$1 →  ● "w" "a" "r" "m" "e" " " "l" "u" "c" "h" "t"}, from: 46
+47: {variable$string$2 →  ● "k" "o" "u" "d" "e" " " "l" "u" "c" "h" "t"}, from: 46
+48: {variable$string$3 →  ● "k" "a" "m" "e" "r"}, from: 46
+49: {variable$string$4 →  ● "g" "a" "t"}, from: 46
+50: {variable$string$5 →  ● "m" "u" "u" "r"}, from: 46
+51: {variable$string$6 →  ● "p" "l" "a" "f" "o" "n" "d"}, from: 46
+52: {qualifier$string$1 →  ● "b" "o" "v" "e" "n"}, from: 46
+53: {qualifier$string$2 →  ● "o" "n" "d" "e" "r"}, from: 46
+54: {descriptive$string$1 →  ● "g" "e" "l" "i" "j" "k"}, from: 46
+
+Chart: 47
+0: {variable$string$1 → "w" ● "a" "r" "m" "e" " " "l" "u" "c" "h" "t"}, from: 46
+
+Chart: 48
+0: {variable$string$1 → "w" "a" ● "r" "m" "e" " " "l" "u" "c" "h" "t"}, from: 46
+
+Chart: 49
+0: {variable$string$1 → "w" "a" "r" ● "m" "e" " " "l" "u" "c" "h" "t"}, from: 46
+
+Chart: 50
+0: {variable$string$1 → "w" "a" "r" "m" ● "e" " " "l" "u" "c" "h" "t"}, from: 46
+
+Chart: 51
+0: {variable$string$1 → "w" "a" "r" "m" "e" ● " " "l" "u" "c" "h" "t"}, from: 46
+
+Chart: 52
+0: {variable$string$1 → "w" "a" "r" "m" "e" " " ● "l" "u" "c" "h" "t"}, from: 46
+
+Chart: 53
+0: {variable$string$1 → "w" "a" "r" "m" "e" " " "l" ● "u" "c" "h" "t"}, from: 46
+
+Chart: 54
+0: {variable$string$1 → "w" "a" "r" "m" "e" " " "l" "u" ● "c" "h" "t"}, from: 46
+
+Chart: 55
+0: {variable$string$1 → "w" "a" "r" "m" "e" " " "l" "u" "c" ● "h" "t"}, from: 46
+
+Chart: 56
+0: {variable$string$1 → "w" "a" "r" "m" "e" " " "l" "u" "c" "h" ● "t"}, from: 46
+
+Chart: 57
+0: {variable$string$1 → "w" "a" "r" "m" "e" " " "l" "u" "c" "h" "t" ● }, from: 46
+1: {variable → variable$string$1 ● }, from: 46
+2: {DESC_ITEM → preposition? article? variable ● }, from: 46
+3: {VAR_ITEM → preposition? article? variable ● }, from: 46
+4: {DESC → DESC_ITEM ● }, from: 46
+5: {DESC → DESC_ITEM ● _ DESC}, from: 46
+6: {VAR_ITEM → DESC _ VAR_ITEM ● }, from: 39
+7: {VAR_ITEM → DESC ● _ VAR_ITEM}, from: 46
+8: {DESC → DESC_ITEM _ DESC ● }, from: 39
+9: {_ →  ● " "}, from: 57
+10: {VAR → QUAL? VAR_ITEM ● }, from: 39
+11: {VAR → VAR_ITEM ● _ QUAL}, from: 39
+12: {VAR_ITEM → DESC ● _ VAR_ITEM}, from: 39
+13: {ACTION? → HELP? MOD? ACTION?$ebnf$2 VAR ● HELP?}, from: 30
+14: {ACTION? → HELP? MOD? ACTION?$ebnf$2 VAR ● HELP?}, from: 26
+15: {ACTION? → HELP? MOD? ACTION?$ebnf$2 VAR ● HELP?}, from: 25
+16: {ACTION → HELP? MOD _ VAR ● HELP?}, from: 30
+17: {ACTION → HELP? MOD _ VAR ● HELP?}, from: 26
+18: {ACTION → HELP? MOD _ VAR ● HELP?}, from: 25
+19: {HELP? →  ● }, from: 57
+20: {HELP? →  ● HELP}, from: 57
+21: {ACTION → HELP? MOD _ VAR HELP? ● }, from: 25
+22: {ACTION → HELP? MOD _ VAR HELP? ● }, from: 26
+23: {ACTION → HELP? MOD _ VAR HELP? ● }, from: 30
+24: {ACTION? → HELP? MOD? ACTION?$ebnf$2 VAR HELP? ● }, from: 25
+25: {ACTION? → HELP? MOD? ACTION?$ebnf$2 VAR HELP? ● }, from: 26
+26: {ACTION? → HELP? MOD? ACTION?$ebnf$2 VAR HELP? ● }, from: 30
+27: {HELP →  ● HELP$ebnf$1 hulpwerkwoord HELP$ebnf$2}, from: 57
+28: {HELP →  ● HELP HELP}, from: 57
+29: {ACTION? → ACTION ● }, from: 25
+30: {HYPOTHESIS → QUAL? if? ACTION? THEN? ACTION ● }, from: 0
+31: {ACTION → ACTION ● _ QUAL}, from: 25
+32: {ACTION → ACTION ● _ and _ ACTION?}, from: 25
+33: {HYPOTHESIS → QUAL? if? ACTION? THEN? ACTION ● }, from: 0
+34: {HYPOTHESIS → QUAL? if? ACTION? THEN? ACTION ● }, from: 0
+35: {HYPOTHESIS → QUAL? if? ACTION? THEN? ACTION ● }, from: 0
+36: {ACTION? → ACTION ● }, from: 26
+37: {ACTION → ACTION ● _ QUAL}, from: 26
+38: {ACTION → ACTION ● _ and _ ACTION?}, from: 26
+39: {HYPOTHESIS → QUAL? if? ACTION? THEN? ACTION ● }, from: 0
+40: {HYPOTHESIS → QUAL? if? ACTION? THEN? ACTION ● }, from: 0
+41: {HYPOTHESIS → QUAL? if? ACTION? THEN? ACTION ● }, from: 0
+42: {HYPOTHESIS → QUAL? if? ACTION? THEN? ACTION ● }, from: 0
+43: {HYPOTHESIS → QUAL? if? ACTION? THEN? ACTION ● }, from: 0
+44: {HYPOTHESIS → QUAL? if? ACTION? THEN? ACTION ● }, from: 0
+45: {HYPOTHESIS → QUAL? if? ACTION? THEN? ACTION ● }, from: 0
+46: {ACTION? → ACTION ● }, from: 30
+47: {ACTION → ACTION ● _ QUAL}, from: 30
+48: {ACTION → ACTION ● _ and _ ACTION?}, from: 30
+49: {HYPOTHESIS → QUAL? if? ACTION? THEN? ACTION ● }, from: 0
+50: {HYPOTHESIS → QUAL? if? ACTION? THEN? ACTION ● }, from: 0
+51: {HYPOTHESIS → QUAL? if? ACTION? THEN? ACTION ● }, from: 0
+52: {HYPOTHESIS → QUAL? if? ACTION? THEN? ACTION ● }, from: 0
+53: {ACTION? → ACTION? ● _ QUAL}, from: 25
+54: {ACTION? → ACTION? ● _ and _ ACTION?}, from: 25
+55: {ACTION → ACTION? ● _ and _ ACTION}, from: 25
+56: {ACTION? → ACTION? ● _ QUAL}, from: 26
+57: {ACTION? → ACTION? ● _ and _ ACTION?}, from: 26
+58: {ACTION → ACTION? ● _ and _ ACTION}, from: 26
+59: {ACTION? → ACTION? ● _ QUAL}, from: 30
+60: {ACTION? → ACTION? ● _ and _ ACTION?}, from: 30
+61: {ACTION → ACTION? ● _ and _ ACTION}, from: 30
+62: {HELP$ebnf$1 →  ● _}, from: 57
+63: {HELP$ebnf$1 →  ● }, from: 57
+64: {ACTION? → ACTION? ● _ QUAL}, from: 25
+65: {ACTION? → ACTION? ● _ and _ ACTION?}, from: 25
+66: {ACTION → ACTION? ● _ and _ ACTION}, from: 25
+67: {ACTION? → ACTION? ● _ QUAL}, from: 26
+68: {ACTION? → ACTION? ● _ and _ ACTION?}, from: 26
+69: {ACTION → ACTION? ● _ and _ ACTION}, from: 26
+70: {ACTION? → ACTION? ● _ QUAL}, from: 30
+71: {ACTION? → ACTION? ● _ and _ ACTION?}, from: 30
+72: {ACTION → ACTION? ● _ and _ ACTION}, from: 30
+73: {HELP → HELP$ebnf$1 ● hulpwerkwoord HELP$ebnf$2}, from: 57
+74: {hulpwerkwoord →  ● hulpwerkwoord$string$1}, from: 57
+75: {hulpwerkwoord →  ● hulpwerkwoord$string$2}, from: 57
+76: {hulpwerkwoord →  ● hulpwerkwoord$string$3}, from: 57
+77: {hulpwerkwoord →  ● hulpwerkwoord$string$4}, from: 57
+78: {hulpwerkwoord →  ● hulpwerkwoord$string$5}, from: 57
+79: {hulpwerkwoord →  ● hulpwerkwoord$string$6}, from: 57
+80: {hulpwerkwoord$string$1 →  ● "b" "l" "i" "j" "f" "t"}, from: 57
+81: {hulpwerkwoord$string$2 →  ● "g" "a" "a" "t"}, from: 57
+82: {hulpwerkwoord$string$3 →  ● "e" "r"}, from: 57
+83: {hulpwerkwoord$string$4 →  ● "i" "s"}, from: 57
+84: {hulpwerkwoord$string$5 →  ● "z" "i" "t"}, from: 57
+85: {hulpwerkwoord$string$6 →  ● "w" "o" "r" "d" "t"}, from: 57
+
+
+Parse results: 
+[ { independent: [ { variable: [32m'muur'[39m, descriptives: [ [32m'gat'[39m ] } ],
+    dependent: 
+     [ { [32m'0'[39m: { change: [32m'decrease'[39m },
+         variable: [32m'warme lucht'[39m,
+         descriptives: [ [32m'gelijk'[39m ],
+         change: [32m'decrease'[39m } ] },
+  { independent: [ { variable: [32m'muur'[39m, descriptives: [ [32m'gat'[39m ] } ],
+    dependent: 
+     [ { [32m'0'[39m: { change: [32m'decrease'[39m },
+         variable: [32m'warme lucht'[39m,
+         descriptives: [ [32m'gelijk'[39m ],
+         change: [32m'decrease'[39m } ] },
+  { independent: [ { variable: [32m'muur'[39m, descriptives: [ [32m'gat'[39m ] } ],
+    dependent: 
+     [ { [32m'0'[39m: { change: [32m'decrease'[39m },
+         variable: [32m'warme lucht'[39m,
+         descriptives: [ [32m'gelijk'[39m ],
+         change: [32m'decrease'[39m } ] },
+  { independent: [ { variable: [32m'muur'[39m, descriptives: [ [32m'gat'[39m ] } ],
+    dependent: 
+     [ { [32m'0'[39m: { change: [32m'decrease'[39m },
+         variable: [32m'warme lucht'[39m,
+         descriptives: [ [32m'gelijk'[39m ],
+         change: [32m'decrease'[39m } ] },
+  { independent: [ { variable: [32m'muur'[39m, descriptives: [ [32m'gat'[39m ] } ],
+    dependent: 
+     [ { [32m'0'[39m: { change: [32m'decrease'[39m },
+         variable: [32m'warme lucht'[39m,
+         descriptives: [ [32m'gelijk'[39m ],
+         change: [32m'decrease'[39m } ] },
+  { independent: [ { variable: [32m'muur'[39m, descriptives: [ [32m'gat'[39m ] } ],
+    dependent: 
+     [ { [32m'0'[39m: { change: [32m'decrease'[39m },
+         variable: [32m'warme lucht'[39m,
+         descriptives: [ [32m'gelijk'[39m ],
+         change: [32m'decrease'[39m } ] },
+  { independent: [ { variable: [32m'muur'[39m, descriptives: [ [32m'gat'[39m ] } ],
+    dependent: 
+     [ { [32m'0'[39m: { change: [32m'decrease'[39m },
+         variable: [32m'warme lucht'[39m,
+         descriptives: [ [32m'gelijk'[39m ],
+         change: [32m'decrease'[39m } ] },
+  { independent: [ { variable: [32m'muur'[39m, descriptives: [ [32m'gat'[39m ] } ],
+    dependent: 
+     [ { [32m'0'[39m: { change: [32m'decrease'[39m },
+         variable: [32m'warme lucht'[39m,
+         descriptives: [ [32m'gelijk'[39m ],
+         change: [32m'decrease'[39m } ] },
+  { independent: [ { variable: [32m'muur'[39m, descriptives: [ [32m'gat'[39m ] } ],
+    dependent: 
+     [ { [32m'0'[39m: { change: [32m'decrease'[39m },
+         variable: [32m'warme lucht'[39m,
+         descriptives: [ [32m'gelijk'[39m ],
+         change: [32m'decrease'[39m } ] },
+  { independent: [ { variable: [32m'muur'[39m, descriptives: [ [32m'gat'[39m ] } ],
+    dependent: 
+     [ { [32m'0'[39m: { change: [32m'decrease'[39m },
+         variable: [32m'warme lucht'[39m,
+         descriptives: [ [32m'gelijk'[39m ],
+         change: [32m'decrease'[39m } ] },
+  { independent: [ { variable: [32m'muur'[39m, descriptives: [ [32m'gat'[39m ] } ],
+    dependent: 
+     [ { [32m'0'[39m: { change: [32m'decrease'[39m },
+         variable: [32m'warme lucht'[39m,
+         descriptives: [ [32m'gelijk'[39m ],
+         change: [32m'decrease'[39m } ] },
+  { independent: [ { variable: [32m'muur'[39m, descriptives: [ [32m'gat'[39m ] } ],
+    dependent: 
+     [ { [32m'0'[39m: { change: [32m'decrease'[39m },
+         variable: [32m'warme lucht'[39m,
+         descriptives: [ [32m'gelijk'[39m ],
+         change: [32m'decrease'[39m } ] },
+  { independent: [ { variable: [32m'muur'[39m, descriptives: [ [32m'gat'[39m ] } ],
+    dependent: 
+     [ { [32m'0'[39m: { change: [32m'decrease'[39m },
+         variable: [32m'warme lucht'[39m,
+         descriptives: [ [32m'gelijk'[39m ],
+         change: [32m'decrease'[39m } ] },
+  { independent: [ { variable: [32m'muur'[39m, descriptives: [ [32m'gat'[39m ] } ],
+    dependent: 
+     [ { [32m'0'[39m: { change: [32m'decrease'[39m },
+         variable: [32m'warme lucht'[39m,
+         descriptives: [ [32m'gelijk'[39m ],
+         change: [32m'decrease'[39m } ] },
+  { independent: [ { variable: [32m'muur'[39m, descriptives: [ [32m'gat'[39m ] } ],
+    dependent: 
+     [ { [32m'0'[39m: { change: [32m'decrease'[39m },
+         variable: [32m'warme lucht'[39m,
+         descriptives: [ [32m'gelijk'[39m ],
+         change: [32m'decrease'[39m } ] } ]

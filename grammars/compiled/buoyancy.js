@@ -1,7 +1,7 @@
-// Generated automatically by nearley
+// Generated automatically by nearley, version 2.19.0
 // http://github.com/Hardmath123/nearley
 (function () {
-function id(x) {return x[0]; }
+function id(x) { return x[0]; }
 
     // in node, require is defined, in browser, _ should be made available externally.
     var _; 
@@ -54,13 +54,32 @@ function id(x) {return x[0]; }
 var grammar = {
     Lexer: undefined,
     ParserRules: [
-    {"name": "HYPOTHESIS", "symbols": ["QUAL?", "if", "_", "ACTION", "then?", "ACTION"], "postprocess": function(d) { return _.merge( { independent: d[3], dependent: d[5] }, d[0] ) }},
-    {"name": "HYPOTHESIS", "symbols": ["QUAL?", "ACTION", "_", "then", "_", "ACTION"], "postprocess": function(d) { return _.merge( { independent: d[1], dependent: d[5] }, d[0] ) }},
-    {"name": "HYPOTHESIS", "symbols": ["ACTION", "_", "if", "_", "ACTION"], "postprocess": function(d) { return { independent: d[4], dependent: d[0] }}},
+    {"name": "HYPOTHESIS", "symbols": ["QUAL?", "if?", "ACTION?", "THEN?", "ACTION"], "postprocess": function(d) { return _.merge( { independent: d[2], dependent: d[4] }, d[0] ) }},
+    {"name": "HYPOTHESIS", "symbols": ["QUAL?", "if?", "ACTION", "THEN?", "ACTION?"], "postprocess": function(d) { return _.merge( { independent: d[2], dependent: d[4] }, d[0] ) }},
+    {"name": "HYPOTHESIS", "symbols": ["QUAL?", "if?", "ACTION?", "THEN", "ACTION?"], "postprocess": function(d) { return _.merge( { independent: d[2], dependent: d[4] }, d[0] ) }},
+    {"name": "HYPOTHESIS", "symbols": ["ACTION?", "_", "if", "_", "ACTION?"], "postprocess": function(d) { return { independent: d[4], dependent: d[0] }}},
+    {"name": "ACTION?", "symbols": ["ACTION"]},
+    {"name": "ACTION?$ebnf$1", "symbols": ["_"], "postprocess": id},
+    {"name": "ACTION?$ebnf$1", "symbols": [], "postprocess": function(d) {return null;}},
+    {"name": "ACTION?", "symbols": ["HELP?", "VAR", "ACTION?$ebnf$1", "MOD?", "HELP?"], "postprocess": function(d) { return [ _.merge( d[1], d[3] ) ] }},
+    {"name": "ACTION?$ebnf$2", "symbols": ["_"], "postprocess": id},
+    {"name": "ACTION?$ebnf$2", "symbols": [], "postprocess": function(d) {return null;}},
+    {"name": "ACTION?", "symbols": ["HELP?", "MOD?", "ACTION?$ebnf$2", "VAR", "HELP?"], "postprocess": function(d) { return [ _.merge( d[3], d[1] ) ] }},
+    {"name": "ACTION?", "symbols": ["ACTION?", "_", "and", "_", "ACTION?"], "postprocess": function(d) { return d[0].concat( d[4] ) }},
+    {"name": "ACTION?", "symbols": ["ACTION?", "_", "QUAL"], "postprocess":  function(d) { 
+           var actions = d[0];
+           var qualifier = d[2];
+           var n = actions.length;
+           for ( var i = 0; i < n; i++ ){
+                 actions[i] = _.merge( actions[i], qualifier )
+           }         
+           return actions;
+        } },
     {"name": "ACTION", "symbols": ["VAR", "_", "interactor", "_", "VAR"], "postprocess": function(d) { return [ _.merge( { variables: [ d[0], d[4] ] }, d[2] ) ] }},
-    {"name": "ACTION", "symbols": ["hulpwerkwoord?", "VAR", "_", "MOD"], "postprocess": function(d) { return [ _.merge( d[1], d[3] ) ] }},
-    {"name": "ACTION", "symbols": ["MOD", "_", "VAR", "hulpwerkwoord?"], "postprocess": function(d) { return [ _.merge( d[0], d[2] ) ] }},
-    {"name": "ACTION", "symbols": ["ACTION", "_", "and", "_", "ACTION"], "postprocess": function(d) { return d[0].concat( d[4] ) }},
+    {"name": "ACTION", "symbols": ["HELP?", "VAR", "_", "MOD", "HELP?"], "postprocess": function(d) { return [ _.merge( d[1], d[3] ) ] }},
+    {"name": "ACTION", "symbols": ["HELP?", "MOD", "_", "VAR", "HELP?"], "postprocess": function(d) { return [ _.merge( d[3], d[1] ) ] }},
+    {"name": "ACTION", "symbols": ["ACTION", "_", "and", "_", "ACTION?"], "postprocess": function(d) { return d[0].concat( d[4] ) }},
+    {"name": "ACTION", "symbols": ["ACTION?", "_", "and", "_", "ACTION"], "postprocess": function(d) { return d[0].concat( d[4] ) }},
     {"name": "ACTION", "symbols": ["ACTION", "_", "QUAL"], "postprocess":  function(d) { 
            var actions = d[0];
            var qualifier = d[2];
@@ -70,7 +89,17 @@ var grammar = {
            }         
            return actions;
         } },
+    {"name": "MOD?", "symbols": []},
+    {"name": "MOD?", "symbols": ["MOD"]},
     {"name": "MOD", "symbols": ["modifier"], "postprocess": $( 0 )},
+    {"name": "HELP?", "symbols": [], "postprocess": nada},
+    {"name": "HELP?", "symbols": ["HELP"]},
+    {"name": "HELP$ebnf$1", "symbols": ["_"], "postprocess": id},
+    {"name": "HELP$ebnf$1", "symbols": [], "postprocess": function(d) {return null;}},
+    {"name": "HELP$ebnf$2", "symbols": ["_"], "postprocess": id},
+    {"name": "HELP$ebnf$2", "symbols": [], "postprocess": function(d) {return null;}},
+    {"name": "HELP", "symbols": ["HELP$ebnf$1", "hulpwerkwoord", "HELP$ebnf$2"]},
+    {"name": "HELP", "symbols": ["HELP", "HELP"]},
     {"name": "VAR", "symbols": ["QUAL?", "VAR_ITEM"], "postprocess": join( 1, 0 )},
     {"name": "VAR", "symbols": ["VAR_ITEM", "_", "QUAL"], "postprocess": join( 0, 2 )},
     {"name": "VAR_ITEM", "symbols": ["preposition?", "article?", "variable"], "postprocess": $( 2 )},
@@ -106,14 +135,17 @@ var grammar = {
     {"name": "preposition$string$2", "symbols": [{"literal":"v"}, {"literal":"a"}, {"literal":"n"}], "postprocess": function joiner(d) {return d.join('');}},
     {"name": "preposition", "symbols": ["preposition$string$2"], "postprocess": nada},
     {"name": "if?", "symbols": [], "postprocess": nada},
-    {"name": "if?", "symbols": ["if", "_"], "postprocess": nada},
+    {"name": "if?$ebnf$1", "symbols": ["_"], "postprocess": id},
+    {"name": "if?$ebnf$1", "symbols": [], "postprocess": function(d) {return null;}},
+    {"name": "if?", "symbols": ["if?$ebnf$1", "if", "_"], "postprocess": nada},
     {"name": "if$string$1", "symbols": [{"literal":"a"}, {"literal":"l"}, {"literal":"s"}], "postprocess": function joiner(d) {return d.join('');}},
     {"name": "if", "symbols": ["if$string$1"], "postprocess": nada},
-    {"name": "then?", "symbols": [], "postprocess": nada},
-    {"name": "then?", "symbols": ["_"], "postprocess": nada},
-    {"name": "then?$ebnf$1", "symbols": ["_"], "postprocess": id},
-    {"name": "then?$ebnf$1", "symbols": [], "postprocess": function(d) {return null;}},
-    {"name": "then?", "symbols": ["then?$ebnf$1", "then", "_"], "postprocess": nada},
+    {"name": "THEN?$ebnf$1", "symbols": ["_"], "postprocess": id},
+    {"name": "THEN?$ebnf$1", "symbols": [], "postprocess": function(d) {return null;}},
+    {"name": "THEN?", "symbols": ["THEN?$ebnf$1", "then", "_"], "postprocess": nada},
+    {"name": "THEN?", "symbols": ["_"], "postprocess": nada},
+    {"name": "THEN?", "symbols": [], "postprocess": nada},
+    {"name": "THEN", "symbols": ["then", "_"], "postprocess": nada},
     {"name": "then$string$1", "symbols": [{"literal":"d"}, {"literal":"a"}, {"literal":"n"}], "postprocess": function joiner(d) {return d.join('');}},
     {"name": "then", "symbols": ["then$string$1"], "postprocess": nada},
     {"name": "then", "symbols": [{"literal":","}], "postprocess": nada},

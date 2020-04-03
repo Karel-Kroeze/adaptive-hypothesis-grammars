@@ -1,4 +1,4 @@
-@include "./base/helpers.ne"
+@include "./helpers.ne"
 
 HYPOTHESIS -> QUAL? if _ ACTION then? ACTION   {% function(d) { return _.merge( { independent: d[3], dependent: d[5] }, d[0] ) } %}
             | QUAL? ACTION _ then _ ACTION         {% function(d) { return _.merge( { independent: d[1], dependent: d[5] }, d[0] ) } %}

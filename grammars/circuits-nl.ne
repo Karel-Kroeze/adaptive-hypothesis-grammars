@@ -16,9 +16,9 @@ descriptive -> "aantal"             {% properties( { descriptive: "aantal" } ) %
 
 qualifier  -> "serie"               {% properties( { qualified: "serie schakeling" } ) %}
           | "parallel"              {% properties( { qualified: "parallelle schakeling" } ) %}
-          | "parallelle"             {% properties( { qualified: "parallelle schakeling" } ) %}
+          | "parallelle"            {% properties( { qualified: "parallelle schakeling" } ) %}
           | "serie schakeling"      {% properties( { qualified: "serie schakeling" } ) %}
-          | "parallelle schakeling"  {% properties( { qualified: "parallelle schakeling" } ) %}
+          | "parallelle schakeling" {% properties( { qualified: "parallelle schakeling" } ) %}
 
 interactor -> "groter is dan"       {% properties( { interaction: true, operator: 'greater than' } ) %}
           | "kleiner is dan"        {% properties( { interaction: true, operator: 'smaller than' } ) %}
