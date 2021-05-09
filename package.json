@@ -12,6 +12,6 @@
   "dependencies": {
     "export-dir": "^0.1.2",
     "glob": "^7.1.4",
-    "lodash": "^4.17.13"
+    "lodash": "^4.17.21"
   }
 }
